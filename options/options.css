@@ -1,0 +1,264 @@
+/* Options page styles for Netatmo Weather Extension */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 16px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+  margin-right: 12px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.tab-button {
+  padding: 12px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.tab-button:hover {
+  background-color: #e0e0e0;
+}
+
+.tab-button.active {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tab-pane {
+  display: none;
+  padding: 24px;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Section styling */
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #334455;
+}
+
+.section h3 {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #334455;
+}
+
+.section-description {
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Form elements */
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #00a2ed;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link i {
+  margin-right: 8px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Alert styling */
+.alert {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.alert i {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+/* Status message */
+.status-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  animation: slideIn 0.3s ease, fadeOut 0.5s ease 2.5s forwards;
+  z-index: 1000;
+}
+
+.status-message i {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+/* Measurement selector */
+.measurement-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* CO2 threshold styling */
+.threshold-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.co2-indicator-preview {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.co2-preview {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 auto 8px auto;
+  box-shadow: 0 0 10px 5px;
+}
+
+.co2-good {
+  background-color: limegreen;
+  color: limegreen;
+}
+
+.co2-average {
+  background-color: orange;
+  color: orange;
+}
+
+.co2-bad {
+  background-color: red;
+  color: red;
+}
+
+/* About tab */
+.about-content {
+  line-height: 1.6;
+}
+
+.about-content h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+#version-info {
+  margin-top: 16px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+    gap: 4px;
+    border-bottom: none;
+    margin-bottom: 16px;
+  }
+  
+  .tab-button {
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+  .tab-button.active {
+    margin-bottom: 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .threshold-inputs {
+    grid-template-columns: 1fr;
+  }
+}

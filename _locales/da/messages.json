@@ -1,0 +1,268 @@
+{
+  "extName": {
+    "message": "StationWeather",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Vis vejrinformation fra din hjemmevejrstation",
+    "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather Indstillinger",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "Klient-ID",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "Klienthemmelighed",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "Opdateringstoken",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "Opdateringsinterval (minutter)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "Vis moduler",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "Vis målinger",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "Gem indstillinger",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "Indstillingerne er gemt",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "Godkendelsesfejl. Kontroller dine oplysninger.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "Indlæser data...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "Sidst opdateret: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5 minuter siden"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "Ingen data tilgængelig. Kontroller forbindelse og indstillinger.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "Temperatur",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "Luftfugtighed",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "Lufttryk",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "Lufttryk (tendens)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "Støj",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "Regn",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "Regn (1t)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "Regn (24t)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "Vind",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "Vindretning",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "Vindstød",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "Vindstød (retning)",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "Batteri",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "Signal",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "Temperatur (tendens)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "stigende",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "stabil",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "faldende",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "ikke tilgængelig",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "Vis batteristatus",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "Vis signalstyrke",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "Vis tendenser",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "Vis stationsnavn",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "For at bruge denne udvidelse skal du oprette en applikation i vejrstationens udviklingsportal og autorisere den til at få adgang til din vejrstations data.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "Åbn Udviklingsportal",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "mbar",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "mm/t",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "km/t",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "Sprogindstillinger",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "Sprog",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "Vælg dit foretrukne sprog. Nogle ændringer kan kræve genstart af udvidelsen.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "Sprogindstillinger gemt. Genstart din browser for at ændringerne kan træde i kraft.",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "Generelle indstillinger",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "Målinger at vise",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "Vælg hvilke målinger der skal vises for hvert modul (når tilgængelig).",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "CO² Tærskelværdier",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "Gennemsnitlig tærskel (ppm)",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "Dårlig tærskel (ppm)",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "God",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "Gennemsnitlig",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "Dårlig",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "Test godkendelse",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "Vælg dit sprog",
+    "description": "Text for language selection"
+  }
+}

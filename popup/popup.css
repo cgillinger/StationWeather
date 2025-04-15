@@ -1,0 +1,266 @@
+/* Popup styles for Netatmo Weather Extension - Dark Theme */
+
+body {
+  width: 600px; /* Ännu bredare än tidigare */
+  max-height: 600px;
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* Mörk bakgrund */
+  color: #fff; /* Vit text */
+}
+
+.container {
+  padding: 16px;
+  min-width: 600px; /* Säkerställ att innehållet är minst 600px brett */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #444; /* Mörkare än original */
+  padding-bottom: 8px;
+}
+
+header h1 {
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #ccc; /* Ljusare än original */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.primary-button {
+  background-color: #0088cc;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+  background-color: #006699;
+  color: white;
+}
+
+.state-message {
+  text-align: center;
+  padding: 32px 16px;
+  color: #ccc;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.state-message i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+#last-updated {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Netatmo Modules styling - Bubbles design with dark theme */
+.netatmo-modules {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%; /* Fyll hela tillgängliga bredden */
+}
+
+.netatmo-module {
+  background-color: #333; /* Mörkare bakgrund för moduler */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%; /* Fyll hela tillgängliga bredden */
+}
+
+.module-header {
+  padding: 8px 12px;
+  background-color: #1a1a1a; /* Mörkare än original */
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.module-content {
+  padding: 16px;
+}
+
+.module-data {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Fyll hela tillgängliga bredden */
+}
+
+.primary-value {
+  flex: 1;
+  font-size: 42px; /* Ännu större */
+  font-weight: 500;
+  text-align: right;
+  padding-right: 24px;
+  color: #fff;
+}
+
+.primary-unit {
+  font-size: 16px;
+  color: #999;
+  font-weight: normal;
+}
+
+.secondary-value {
+  width: 100px; /* Större bredd */
+  text-align: center;
+  padding: 0 16px;
+}
+
+.co2-indicator {
+  width: 24px; /* Större */
+  height: 24px; /* Större */
+  border-radius: 50%;
+  margin: 0 auto 8px auto;
+  box-shadow: 0 0 12px 6px; /* Större glow */
+}
+
+.co2-good {
+  background-color: limegreen;
+  color: limegreen;
+}
+
+.co2-average {
+  background-color: orange;
+  color: orange;
+}
+
+.co2-bad {
+  background-color: red;
+  color: red;
+}
+
+.co2-undefined {
+  background-color: #444;
+  color: #444;
+}
+
+.secondary-text {
+  font-size: 16px; /* Större */
+  color: #ccc;
+}
+
+.measurements {
+  flex: 1;
+  padding-left: 24px; /* Mer utfyllnad */
+  border-left: 1px solid #444; /* Mörkare än original */
+  min-width: 200px; /* Säkerställ minimibredd */
+}
+
+.measurement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Lite mer utrymme */
+  font-size: 16px; /* Större text */
+}
+
+.measurement:last-child {
+  margin-bottom: 0;
+}
+
+.measurement-icon {
+  width: 20px; /* Större ikoner */
+  text-align: center;
+  margin-right: 10px;
+  color: #aaa;
+  font-size: 16px; /* Större ikonstorlek */
+}
+
+.measurement-label {
+  margin-right: 6px;
+  color: #ccc;
+}
+
+.measurement-value {
+  margin-left: auto;
+  font-weight: 500;
+  color: #fff;
+}
+
+.measurement-unit {
+  margin-left: 4px;
+  color: #999;
+  font-size: 14px;
+}
+
+.system-indicator {
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Större */
+  color: #888;
+  margin-top: 10px;
+}
+
+.system-indicator .measurement-icon {
+  font-size: 14px;
+}
+
+.signal-good { color: limegreen; }
+.signal-average { color: orange; }
+.signal-bad { color: red; }
+
+/* Flash animation for low battery */
+.flash {
+  animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Wind direction arrow */
+.wind-direction {
+  display: inline-block;
+  transform-origin: center;
+}

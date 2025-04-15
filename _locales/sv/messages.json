@@ -1,0 +1,220 @@
+{
+  "extName": {
+    "message": "StationWeather",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Visa väderinformation från din hemväderstation",
+    "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather Inställningar",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "Klient-ID",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "Klienthemlighet",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "Uppdateringstoken",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "Uppdateringsintervall (minuter)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "Visa moduler",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "Visa mätvärden",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "Spara inställningar",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "Inställningarna har sparats",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "Autentiseringsfel. Kontrollera dina uppgifter.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "Laddar data...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "Senast uppdaterad: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5 minuter sedan"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "Ingen data tillgänglig. Kontrollera din anslutning och inställningar.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "Temperatur",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "Luftfuktighet",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "Lufttryck",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "Lufttryck (trend)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "Ljud",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "Regn",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "Regn (1h)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "Regn (24h)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "Vind",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "Vindriktning",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "Vindbyar",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "Vindbyar (riktning)",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "Batteri",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "Signal",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "Temperatur (trend)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "stigande",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "stabil",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "fallande",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "inte tillgänglig",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "Visa batteristatus",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "Visa signalstyrka",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "Visa trender",
+    "description": "Label for trend display option"
+  },
+  "apiInstructions": {
+    "message": "För att använda detta tillägg behöver du skapa en applikation i väderstationens utvecklarportal och auktorisera den att få tillgång till din väderstations data.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "Öppna Utvecklarportal",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "mbar",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "mm/h",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "km/h",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "Språkinställningar",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "Språk",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "Välj ditt önskade språk. Vissa ändringar kan kräva en omstart av tillägget.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "Språkinställningar sparade. Starta om din webbläsare för att ändringarna ska träda i kraft.",
+    "description": "Message shown when language is changed"
+  }
+}

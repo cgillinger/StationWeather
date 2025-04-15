@@ -1,0 +1,220 @@
+{
+  "extName": {
+    "message": "StationWeather",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Display weather information from your home weather station",
+    "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather Settings",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "Client ID",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "Client Secret",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "Refresh Token",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "Update Interval (minutes)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "Display Modules",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "Display Measurements",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "Save Settings",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "Settings saved successfully",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "Authentication error. Please check your credentials.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "Loading data...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "Last updated: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5 minutes ago"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "No data available. Please check your connection and settings.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "Temperature",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "Humidity",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "Pressure",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "Pressure (trend)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "Noise",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "Rain",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "Rain (1h)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "Rain (24h)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "Wind",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "Wind Direction",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "Gusts",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "Gusts Direction",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "Battery",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "Signal",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "Temperature (trend)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "rising",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "stable",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "falling",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "not available",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "Show battery status",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "Show signal strength",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "Show trends",
+    "description": "Label for trend display option"
+  },
+  "apiInstructions": {
+    "message": "To use this extension, you need to create an application in the weather station developer portal and authorize it to access your weather station data.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "Open Developer Portal",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "mbar",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "mm/h",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "km/h",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "Language Settings",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "Language",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "Select your preferred language. Some changes may require an extension restart.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "Language settings saved. Restart your browser for changes to take effect.",
+    "description": "Message shown when language is changed"
+  }
+}

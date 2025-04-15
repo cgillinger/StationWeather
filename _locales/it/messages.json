@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "StationWeather",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Display weather information from your home weather station",
+    "description": "The description of the extension"
+  }
+}

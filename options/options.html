@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StationWeather Settings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><img src="../images/station-logo.png" alt="StationWeather" class="logo"> <span id="options-title">StationWeather Settings</span></h1>
+    </header>
+    
+    <div class="tabs">
+      <button class="tab-button active" data-tab="auth-tab">API Setup</button>
+      <button class="tab-button" data-tab="display-tab">Display Options</button>
+      <button class="tab-button" data-tab="about-tab">About</button>
+    </div>
+    
+    <div class="tab-content">
+      <!-- Authentication Tab -->
+      <div id="auth-tab" class="tab-pane active">
+        <div class="section">
+          <h2 id="auth-section-title">API Authentication</h2>
+          <p id="auth-instructions" class="section-description">
+            To use this extension, you need to create an application in the weather station developer portal and authorize it to access your weather station data.
+          </p>
+          <a href="https://dev.netatmo.com/apps" target="_blank" id="api-portal-link" class="nav-link">
+            <i class="fas fa-external-link-alt"></i> Open Developer Portal
+          </a>
+          
+          <div class="alert hidden" id="auth-alert">
+            <i class="fas fa-exclamation-circle"></i>
+            <span id="auth-alert-text"></span>
+          </div>
+          
+          <form id="auth-form">
+            <div class="form-group">
+              <label for="client-id" id="client-id-label">Client ID</label>
+              <input type="text" id="client-id" placeholder="Enter your application client ID">
+            </div>
+            
+            <div class="form-group">
+              <label for="client-secret" id="client-secret-label">Client Secret</label>
+              <input type="password" id="client-secret" placeholder="Enter your application client secret">
+            </div>
+            
+            <div class="form-group">
+              <label for="refresh-token" id="refresh-token-label">Refresh Token</label>
+              <input type="text" id="refresh-token" placeholder="Enter your refresh token">
+              <div class="form-help" id="refresh-token-help">
+                Generate a token with 'read_station' scope in the developer portal.
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="update-interval" id="update-interval-label">Update Interval (minutes)</label>
+              <input type="number" id="update-interval" min="1" max="60" value="3">
+              <div class="form-help" id="update-interval-help">
+                How often to fetch new data (data updates every 10 minutes).
+              </div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="button" id="test-auth-btn" class="btn btn-secondary">
+                <i class="fas fa-vial"></i> <span id="test-auth-text">Test Authentication</span>
+              </button>
+              <button type="submit" id="save-auth-btn" class="btn btn-primary">
+                <i class="fas fa-save"></i> <span id="save-auth-text">Save Settings</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Display Options Tab -->
+      <div id="display-tab" class="tab-pane">
+        <div class="section">
+          <h2 id="display-section-title">Display Options</h2>
+          <p id="display-instructions" class="section-description">
+            Customize how weather information is displayed in the extension.
+          </p>
+          
+          <form id="display-form">
+            <div class="form-group">
+              <h3 id="general-options-title">General Options</h3>
+              
+              <div class="form-check">
+                <input type="checkbox" id="show-battery" checked>
+                <label for="show-battery" id="show-battery-label">Show battery status</label>
+              </div>
+              
+              <div class="form-check">
+                <input type="checkbox" id="show-signal" checked>
+                <label for="show-signal" id="show-signal-label">Show signal strength</label>
+              </div>
+              
+              <div class="form-check">
+                <input type="checkbox" id="show-trend" checked>
+                <label for="show-trend" id="show-trend-label">Show trends</label>
+              </div>
+              
+              <div class="form-check">
+                <input type="checkbox" id="show-station-name" checked>
+                <label for="show-station-name" id="show-station-name-label">Show station name</label>
+              </div>
+              
+              <div class="form-group">
+                <h3 id="language-settings-title">Language Settings</h3>
+                
+                <div class="form-group">
+                  <label for="language-selector" id="language-label">Language</label>
+                  <select id="language-selector" class="form-control">
+                    <option value="en">English</option>
+                    <option value="sv">Svenska</option>
+                    <option value="nb">Norsk</option>
+                    <option value="da">Dansk</option>
+                    <option value="fi">Suomi</option>
+                    <option value="is">Íslenska</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                    <option value="pt">Português</option>
+                    <option value="ru">Русский</option>
+                    <option value="zh">中文</option>
+                    <option value="ja">日本語</option>
+                    <option value="ar">العربية</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="it">Italiano</option>
+                    <option value="pl">Polski</option>
+                    <option value="nl">Nederlands</option>
+                  </select>
+                  <div class="form-help" id="language-help">
+                    Select your preferred language. Some changes may require an extension restart.
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <h3 id="measurements-title">Measurements to Display</h3>
+              <p id="measurements-description" class="form-help">
+                Select which measurements to show for each module (when available).
+              </p>
+              
+              <div class="measurement-selector">
+                <div class="form-check">
+                  <input type="checkbox" id="show-temperature" checked>
+                  <label for="show-temperature" id="show-temperature-label">Temperature</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-humidity" checked>
+                  <label for="show-humidity" id="show-humidity-label">Humidity</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-pressure" checked>
+                  <label for="show-pressure" id="show-pressure-label">Pressure</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-co2" checked>
+                  <label for="show-co2" id="show-co2-label">CO²</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-noise" checked>
+                  <label for="show-noise" id="show-noise-label">Noise</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-rain" checked>
+                  <label for="show-rain" id="show-rain-label">Rain</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-wind" checked>
+                  <label for="show-wind" id="show-wind-label">Wind</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-wind-angle" checked>
+                  <label for="show-wind-angle" id="show-wind-angle-label">Wind Direction</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-gust" checked>
+                  <label for="show-gust" id="show-gust-label">Gusts</label>
+                </div>
+                
+                <div class="form-check">
+                  <input type="checkbox" id="show-gust-angle" checked>
+                  <label for="show-gust-angle" id="show-gust-angle-label">Gusts Direction</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <h3 id="co2-thresholds-title">CO² Thresholds</h3>
+              
+              <div class="threshold-inputs">
+                <div>
+                  <label for="co2-average" id="co2-average-label">Average Threshold (ppm)</label>
+                  <input type="number" id="co2-average" min="400" max="5000" value="800">
+                </div>
+                
+                <div>
+                  <label for="co2-bad" id="co2-bad-label">Bad Threshold (ppm)</label>
+                  <input type="number" id="co2-bad" min="400" max="5000" value="1800">
+                </div>
+              </div>
+              
+              <div class="co2-indicator-preview">
+                <div>
+                  <div class="co2-preview co2-good"></div>
+                  <label id="co2-good-label">Good</label>
+                </div>
+                <div>
+                  <div class="co2-preview co2-average"></div>
+                  <label id="co2-average-preview-label">Average</label>
+                </div>
+                <div>
+                  <div class="co2-preview co2-bad"></div>
+                  <label id="co2-bad-preview-label">Bad</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" id="save-display-btn" class="btn btn-primary">
+                <i class="fas fa-save"></i> <span id="save-display-text">Save Settings</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <!-- About Tab -->
+      <div id="about-tab" class="tab-pane">
+        <div class="section">
+          <h2 id="about-title">About StationWeather</h2>
+          
+          <div class="about-content">
+            <p id="about-description">
+              This extension displays weather information from your home weather station.
+            </p>
+            
+            <p id="version-info">Version: 1.0.0</p>
+            
+            <h3 id="attribution-title">Attribution</h3>
+            <p id="attribution-text">
+              Based on the MagicMirror module by Christopher Fenner.
+            </p>
+            <p>
+              <a href="https://github.com/CFenner/MMM-Netatmo" target="_blank" id="original-repo-link" class="nav-link">
+                <i class="fab fa-github"></i> Original Repository
+              </a>
+            </p>
+            
+            <h3 id="privacy-title">Privacy</h3>
+            <p id="privacy-text">
+              This extension only connects to the weather station API and does not collect or share any personal data.
+              Your API credentials are stored locally in your browser's secure storage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="status-message" class="status-message hidden">
+      <i class="fas fa-check-circle"></i>
+      <span id="status-text"></span>
+    </div>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
