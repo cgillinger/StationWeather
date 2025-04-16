@@ -12,6 +12,30 @@ A Microsoft Edge extension to display information from your Netatmo weather stat
 - Visual indicators for CO2 quality levels
 - Battery and signal strength monitoring for each module
 - Automatic data updates in the background
+- Available in multiple languages (see below)
+
+## Supported Languages
+
+The extension is fully localized and available in the following languages:
+- English
+- Swedish (Svenska)
+- Norwegian (Norsk)
+- Danish (Dansk)
+- Finnish (Suomi)
+- Icelandic (Íslenska)
+- German (Deutsch)
+- French (Français)
+- Spanish (Español)
+- Portuguese (Português)
+- Russian (Русский)
+- Chinese (中文)
+- Japanese (日本語)
+- Arabic (العربية)
+- Hindi (हिन्दी)
+- Italian (Italiano)
+- Polish (Polski)
+- Dutch (Nederlands)
+- Ukrainian (Українська)
 
 ## Installation
 
@@ -64,6 +88,8 @@ This extension only communicates with the Netatmo API. Your API credentials are 
 ## Attribution
 
 This extension is based on the [MMM-Netatmo](https://github.com/CFenner/MMM-Netatmo) module for MagicMirror² by Christopher Fenner. The original code is used under the MIT License.
+
+Weather icons based on [SVG Weather Icons](https://www.amcharts.com/free-animated-svg-weather-icons/) by amCharts, licensed under CC BY 4.0.
 
 ## License
 
