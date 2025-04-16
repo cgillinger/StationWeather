@@ -8,11 +8,13 @@
 
 import { fetchWeatherData, refreshAccessToken, testAuthentication } from './api.js';
 import { processMeasurements, getDefaultSettings } from './utils.js';
+import { initTranslations } from './translations.js';
 
 // Default settings
 const DEFAULT_UPDATE_INTERVAL = 3; // minutes
+let currentLanguage = 'en';
 
-// Initialize alarm for periodic updates
+// Initialize extension
 chrome.runtime.onInstalled.addListener(async () => {
   console.log('StationWeather extension installed');
   
@@ -21,7 +23,7 @@ chrome.runtime.onInstalled.addListener(async () => {
   if (!settings.settings) {
     // Try to detect browser language
     const browserLanguage = navigator.language.split('-')[0];
-    const supportedLanguages = ['en', 'sv', 'da', 'nb', 'fi', 'is', 'de', 'fr', 'es', 'pt', 'ru', 'zh', 'ja', 'ar', 'hi', 'it', 'pl', 'nl'];
+    const supportedLanguages = ['en', 'sv', 'da', 'nb', 'fi', 'is', 'de', 'fr', 'es', 'pt', 'ru', 'zh', 'ja', 'ar', 'hi', 'it', 'pl', 'nl', 'uk'];
     const defaultLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
     
     // Set default language based on browser language
@@ -32,17 +34,13 @@ chrome.runtime.onInstalled.addListener(async () => {
       }
     });
     
-    // Set UI language to match
-    chrome.i18n.getAcceptLanguages((languages) => {
-      if (languages && languages.length > 0) {
-        const preferredLanguage = languages[0].split('-')[0];
-        if (supportedLanguages.includes(preferredLanguage)) {
-          // Load language resources
-          console.log(`Using browser preferred language: ${preferredLanguage}`);
-        }
-      }
-    });
+    currentLanguage = defaultLanguage;
+  } else if (settings.settings.language) {
+    currentLanguage = settings.settings.language;
   }
+  
+  // Initialize translations system
+  await initTranslations(currentLanguage);
   
   // Create alarm for data updates
   setupUpdateAlarm();
@@ -57,7 +55,7 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
 
 // Handle messages from popup and options
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === 'getWeatherData') {
+  if (message.action === 'getNetatmoData') {
     // Return cached data immediately
     chrome.storage.local.get('weatherData', (data) => {
       sendResponse({ data: data.weatherData || null });
@@ -104,11 +102,24 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       } else {
         // Default to browser language
         const browserLanguage = navigator.language.split('-')[0];
-        const supportedLanguages = ['en', 'sv', 'da', 'nb', 'fi', 'is', 'de', 'fr', 'es', 'pt', 'ru', 'zh', 'ja', 'ar', 'hi', 'it', 'pl', 'nl'];
+        const supportedLanguages = ['en', 'sv', 'da', 'nb', 'fi', 'is', 'de', 'fr', 'es', 'pt', 'ru', 'zh', 'ja', 'ar', 'hi', 'it', 'pl', 'nl', 'uk'];
         const defaultLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
         sendResponse({ language: defaultLanguage });
       }
     });
+    return true; // Keep channel open for async response
+  }
+  
+  if (message.action === 'languageChanged') {
+    const { language } = message;
+    if (language) {
+      currentLanguage = language;
+      initTranslations(language).then(() => {
+        sendResponse({ success: true });
+      }).catch((error) => {
+        sendResponse({ success: false, error: error.message });
+      });
+    }
     return true; // Keep channel open for async response
   }
 });
@@ -276,6 +287,12 @@ function updateBadge(data) {
 async function saveSettings(newSettings) {
   await chrome.storage.sync.set({ settings: newSettings });
   console.log('Settings saved:', newSettings);
+  
+  // Update current language if it changed
+  if (newSettings.language && newSettings.language !== currentLanguage) {
+    currentLanguage = newSettings.language;
+    await initTranslations(currentLanguage);
+  }
 }
 
 // Initial data update on startup

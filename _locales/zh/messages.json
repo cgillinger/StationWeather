@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "显示您家庭气象站的天气信息",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather 设置",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "客户端 ID",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "客户端密钥",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "刷新令牌",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "更新间隔（分钟）",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "显示模块",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "显示测量值",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "保存设置",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "设置已成功保存",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "认证错误。请检查您的凭据。",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "加载数据中...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "上次更新：$TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5分钟前"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "无可用数据。请检查您的连接和设置。",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "温度",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "湿度",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "气压",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "气压（趋势）",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "噪音",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "降雨",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "降雨（1小时）",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "降雨（24小时）",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "风速",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "风向",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "阵风",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "阵风方向",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "电池",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "信号",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "温度（趋势）",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "上升",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "稳定",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "下降",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "不可用",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "显示电池状态",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "显示信号强度",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "显示趋势",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "显示站点名称",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "要使用此扩展，您需要在气象站开发者门户中创建应用程序并授权访问您的气象站数据。",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "打开开发者门户",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "百帕",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "分贝",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "毫米/小时",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "公里/小时",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "语言设置",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "语言",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "选择您的首选语言。某些更改可能需要重启扩展程序。",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "语言设置已保存。请重启浏览器以使更改生效。",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "常规选项",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "要显示的测量值",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "选择为每个模块显示哪些测量值（如可用）。",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "CO²阈值",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "平均阈值（ppm）",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "不良阈值（ppm）",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "良好",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "平均",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "不良",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "测试认证",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "选择您的语言",
+    "description": "Text for language selection"
   }
 }

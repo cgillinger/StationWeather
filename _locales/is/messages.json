@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "Sýnir veðurupplýsingar frá heimaveðurstöðinni þinni",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather Stillingar",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "Biðlara-auðkenni",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "Biðlaraleynd",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "Endurnýjunartákn",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "Uppfærslutími (mínútur)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "Sýna einingar",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "Sýna mælingar",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "Vista stillingar",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "Stillingar vistaðar",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "Auðkenningarvilla. Vinsamlegast athugaðu upplýsingarnar þínar.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "Hleð gögnum...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "Síðast uppfært: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "fyrir 5 mínútum"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "Engin gögn tiltæk. Vinsamlegast athugaðu tenginguna og stillingarnar þínar.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "Hitastig",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "Rakastig",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "Loftþrýstingur",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "Loftþrýstingur (þróun)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "Hávaði",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "Úrkoma",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "Úrkoma (1klst)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "Úrkoma (24klst)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "Vindur",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "Vindátt",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "Vindhviður",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "Hviðustefna",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "Rafhlaða",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "Merki",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "Hitastig (þróun)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "hækkandi",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "stöðugt",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "lækkandi",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "ekki tiltækt",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "Sýna rafhlöðustöðu",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "Sýna merkjastyrk",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "Sýna þróun",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "Sýna heiti stöðvar",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "Til að nota þessa viðbót þarftu að búa til forrit í þróunargátt veðurstöðvarinnar og heimila því aðgang að gögnum veðurstöðvarinnar þinnar.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "Opna þróunargátt",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "hPa",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "mm/klst",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "km/klst",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "Tungumálastillingar",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "Tungumál",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "Veldu tungumálið þitt. Sumar breytingar gætu krafist endurræsingar á viðbótinni.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "Tungumálastillingar vistaðar. Endurræstu vafrann til að breytingarnar taki gildi.",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "Almennar stillingar",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "Mælingar til að sýna",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "Veldu hvaða mælingar á að sýna fyrir hverja einingu (þegar þær eru í boði).",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "CO² Viðmiðunarmörk",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "Meðalmörk (ppm)",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "Slæm mörk (ppm)",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "Gott",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "Meðal",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "Slæmt",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "Prófa auðkenningu",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "Veldu tungumál þitt",
+    "description": "Text for language selection"
   }
 }

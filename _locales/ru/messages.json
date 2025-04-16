@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "Отображает информацию о погоде с вашей домашней метеостанции",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "Настройки StationWeather",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "ID клиента",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "Секрет клиента",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "Токен обновления",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "Интервал обновления (минуты)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "Отображение модулей",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "Отображение измерений",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "Сохранить настройки",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "Настройки успешно сохранены",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "Ошибка аутентификации. Пожалуйста, проверьте ваши учетные данные.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "Загрузка данных...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "Последнее обновление: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5 минут назад"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "Нет доступных данных. Пожалуйста, проверьте ваше соединение и настройки.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "Температура",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "Влажность",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "Давление",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "Давление (тренд)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "Шум",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "Осадки",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "Осадки (1ч)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "Осадки (24ч)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "Ветер",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "Направление ветра",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "Порывы",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "Направление порывов",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "Батарея",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "Сигнал",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "Температура (тренд)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "повышается",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "стабильно",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "понижается",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "недоступно",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "Показывать статус батареи",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "Показывать силу сигнала",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "Показывать тренды",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "Показывать название станции",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "Для использования этого расширения необходимо создать приложение в портале разработчиков метеостанции и авторизовать его для доступа к данным вашей метеостанции.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "Открыть портал разработчиков",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "мбар",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "дБ",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "мм/ч",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "км/ч",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "Настройки языка",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "Язык",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "Выберите предпочтительный язык. Некоторые изменения могут потребовать перезапуска расширения.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "Настройки языка сохранены. Перезапустите браузер, чтобы изменения вступили в силу.",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "Общие настройки",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "Отображаемые измерения",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "Выберите, какие измерения отображать для каждого модуля (если доступны).",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "Пороговые значения CO²",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "Средний порог (ppm)",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "Плохой порог (ppm)",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "Хороший",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "Средний",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "Плохой",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "Проверить аутентификацию",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "Выберите ваш язык",
+    "description": "Text for language selection"
   }
 }

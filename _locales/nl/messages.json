@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "Toon weerinformatie van je thuisweerstation",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather Instellingen",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "Client ID",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "Client Secret",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "Vernieuwingstoken",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "Update-interval (minuten)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "Modules weergeven",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "Metingen weergeven",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "Instellingen opslaan",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "Instellingen succesvol opgeslagen",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "Authenticatiefout. Controleer je inloggegevens.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "Gegevens laden...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "Laatst bijgewerkt: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5 minuten geleden"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "Geen gegevens beschikbaar. Controleer je verbinding en instellingen.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "Temperatuur",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "Luchtvochtigheid",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "Luchtdruk",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "Luchtdruk (trend)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "Geluid",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "Regen",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "Regen (1u)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "Regen (24u)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "Wind",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "Windrichting",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "Windstoten",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "Windstoten (richting)",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "Batterij",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "Signaal",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "Temperatuur (trend)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "stijgend",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "stabiel",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "dalend",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "niet beschikbaar",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "Batterijstatus weergeven",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "Signaalsterkte weergeven",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "Trends weergeven",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "Stationsnaam weergeven",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "Om deze extensie te gebruiken, moet je een applicatie aanmaken in de ontwikkelaarsportal van het weerstation en deze autoriseren om toegang te krijgen tot je weerstationgegevens.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "Ontwikkelaarsportal openen",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "mbar",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "mm/u",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "km/u",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "Taalinstellingen",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "Taal",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "Selecteer je voorkeurstaal. Sommige wijzigingen vereisen mogelijk een herstart van de extensie.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "Taalinstellingen opgeslagen. Start je browser opnieuw om de wijzigingen door te voeren.",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "Algemene opties",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "Weer te geven metingen",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "Selecteer welke metingen voor elke module moeten worden weergegeven (indien beschikbaar).",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "CO² Drempelwaarden",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "Gemiddelde drempel (ppm)",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "Slechte drempel (ppm)",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "Goed",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "Gemiddeld",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "Slecht",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "Authenticatie testen",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "Selecteer je taal",
+    "description": "Text for language selection"
   }
 }

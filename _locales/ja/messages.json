@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "ご家庭の気象ステーションからの天気情報を表示します",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather 設定",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "クライアントID",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "クライアントシークレット",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "リフレッシュトークン",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "更新間隔（分）",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "モジュールの表示",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "測定値の表示",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "設定を保存",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "設定が正常に保存されました",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "認証エラー。資格情報を確認してください。",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "データを読み込み中...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "最終更新: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5分前"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "データがありません。接続と設定を確認してください。",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "気温",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "湿度",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "気圧",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "気圧（傾向）",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "騒音",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "降水量",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "降水量（1時間）",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "降水量（24時間）",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "風速",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "風向",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "突風",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "突風の方向",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "バッテリー",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "信号",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "気温（傾向）",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "上昇中",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "安定",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "下降中",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "利用不可",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "バッテリー状態を表示",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "信号強度を表示",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "傾向を表示",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "ステーション名を表示",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "この拡張機能を使用するには、気象ステーションの開発者ポータルでアプリケーションを作成し、気象ステーションのデータへのアクセスを許可する必要があります。",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "開発者ポータルを開く",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "hPa",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "mm/h",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "km/h",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "言語設定",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "言語",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "希望する言語を選択してください。一部の変更は拡張機能の再起動が必要な場合があります。",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "言語設定が保存されました。変更を適用するにはブラウザを再起動してください。",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "一般設定",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "表示する測定値",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "各モジュールに表示する測定値を選択してください（利用可能な場合）。",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "CO²しきい値",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "平均しきい値（ppm）",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "悪いしきい値（ppm）",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "良好",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "平均",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "悪い",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "認証テスト",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "言語を選択",
+    "description": "Text for language selection"
   }
 }

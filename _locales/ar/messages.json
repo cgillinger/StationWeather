@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "عرض معلومات الطقس من محطة الطقس المنزلية الخاصة بك",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "إعدادات StationWeather",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "معرّف العميل",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "سر العميل",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "رمز التحديث",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "فترة التحديث (دقائق)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "عرض الوحدات",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "عرض القياسات",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "حفظ الإعدادات",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "تم حفظ الإعدادات بنجاح",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "خطأ في المصادقة. يرجى التحقق من بيانات الاعتماد الخاصة بك.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "جاري تحميل البيانات...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "آخر تحديث: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "منذ 5 دقائق"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "لا توجد بيانات متاحة. يرجى التحقق من الاتصال والإعدادات.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "درجة الحرارة",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "الرطوبة",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "الضغط الجوي",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "الضغط الجوي (الاتجاه)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "ثاني أكسيد الكربون",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "الضوضاء",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "المطر",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "المطر (ساعة)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "المطر (24 ساعة)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "الرياح",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "اتجاه الرياح",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "الهبات",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "اتجاه الهبات",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "البطارية",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "الإشارة",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "واي فاي",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "درجة الحرارة (الاتجاه)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "صعود",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "مستقر",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "هبوط",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "غير متوفر",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "عرض حالة البطارية",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "عرض قوة الإشارة",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "عرض الاتجاهات",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "عرض اسم المحطة",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "لاستخدام هذا الامتداد، تحتاج إلى إنشاء تطبيق في بوابة مطوري محطة الطقس والسماح له بالوصول إلى بيانات محطة الطقس الخاصة بك.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "فتح بوابة المطورين",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°م",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "مللي بار",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "جزء في المليون",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "ديسيبل",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "ملم/س",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "كم/س",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "إعدادات اللغة",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "اللغة",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "اختر لغتك المفضلة. قد تتطلب بعض التغييرات إعادة تشغيل الامتداد.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "تم حفظ إعدادات اللغة. قم بإعادة تشغيل المتصفح لتفعيل التغييرات.",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "الخيارات العامة",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "القياسات المراد عرضها",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "اختر القياسات التي سيتم عرضها لكل وحدة (عند توفرها).",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "عتبات ثاني أكسيد الكربون",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "العتبة المتوسطة (جزء في المليون)",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "العتبة السيئة (جزء في المليون)",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "جيد",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "متوسط",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "سيء",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "اختبار المصادقة",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "اختر لغتك",
+    "description": "Text for language selection"
   }
 }

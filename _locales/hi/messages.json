@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "अपने घर के मौसम स्टेशन से मौसम की जानकारी प्रदर्शित करें",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather सेटिंग्स",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "क्लाइंट आईडी",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "क्लाइंट सीक्रेट",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "रिफ्रेश टोकन",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "अपडेट अंतराल (मिनट)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "मॉड्यूल प्रदर्शित करें",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "मापन प्रदर्शित करें",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "सेटिंग्स सहेजें",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "सेटिंग्स सफलतापूर्वक सहेजी गईं",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "प्रमाणीकरण त्रुटि। कृपया अपने क्रेडेंशियल्स जांचें।",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "डेटा लोड हो रहा है...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "अंतिम अपडेट: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5 मिनट पहले"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "कोई डेटा उपलब्ध नहीं है। कृपया अपने कनेक्शन और सेटिंग्स जांचें।",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "तापमान",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "आर्द्रता",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "दबाव",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "दबाव (प्रवृत्ति)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "शोर",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "वर्षा",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "वर्षा (1 घंटा)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "वर्षा (24 घंटे)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "हवा",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "हवा की दिशा",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "झोंके",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "झोंके की दिशा",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "बैटरी",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "सिग्नल",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "वाईफाई",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "तापमान (प्रवृत्ति)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "बढ़ रहा है",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "स्थिर",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "घट रहा है",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "उपलब्ध नहीं है",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "बैटरी स्थिति दिखाएं",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "सिग्नल शक्ति दिखाएं",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "प्रवृत्तियां दिखाएं",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "स्टेशन का नाम दिखाएं",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "इस एक्सटेंशन का उपयोग करने के लिए, आपको मौसम स्टेशन डेवलपर पोर्टल में एक एप्लिकेशन बनाने और अपने मौसम स्टेशन डेटा तक पहुंच के लिए इसे अधिकृत करने की आवश्यकता है।",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "डेवलपर पोर्टल खोलें",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "mbar",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "मिमी/घं",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "किमी/घं",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "भाषा सेटिंग्स",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "भाषा",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "अपनी पसंदीदा भाषा चुनें। कुछ परिवर्तनों के लिए एक्सटेंशन को पुनरारंभ करने की आवश्यकता हो सकती है।",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "भाषा सेटिंग्स सहेजी गईं। परिवर्तनों को लागू करने के लिए अपने ब्राउज़र को पुनरारंभ करें।",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "सामान्य विकल्प",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "प्रदर्शित करने के लिए मापन",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "प्रत्येक मॉड्यूल के लिए कौन से मापन प्रदर्शित करने हैं, चुनें (जब उपलब्ध हों)।",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "CO² सीमाएँ",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "औसत सीमा (ppm)",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "खराब सीमा (ppm)",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "अच्छा",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "औसत",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "खराब",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "प्रमाणीकरण परीक्षण",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "अपनी भाषा चुनें",
+    "description": "Text for language selection"
   }
 }

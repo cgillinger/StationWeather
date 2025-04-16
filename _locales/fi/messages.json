@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "Näyttää sääasemasi säätiedot",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "StationWeather Asetukset",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "Asiakastunnus",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "Asiakassalaisuus",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "Päivitystunnus",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "Päivitysväli (minuutteja)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "Näytä moduulit",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "Näytä mittaukset",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "Tallenna asetukset",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "Asetukset tallennettu onnistuneesti",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "Todennusvirhe. Tarkista tunnistetietosi.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "Ladataan tietoja...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "Viimeksi päivitetty: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5 minuuttia sitten"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "Tietoja ei saatavilla. Tarkista yhteys ja asetukset.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "Lämpötila",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "Kosteus",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "Ilmanpaine",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "Ilmanpaine (trendi)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "Melu",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "Sade",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "Sade (1h)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "Sade (24h)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "Tuuli",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "Tuulen suunta",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "Puuskat",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "Puuskien suunta",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "Akku",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "Signaali",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "Lämpötila (trendi)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "nouseva",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "vakaa",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "laskeva",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "ei saatavilla",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "Näytä akun tila",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "Näytä signaalin voimakkuus",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "Näytä trendit",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "Näytä aseman nimi",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "Käyttääksesi tätä laajennusta sinun tulee luoda sovellus sääaseman kehittäjäportaalissa ja valtuuttaa se pääsemään sääasemasi tietoihin.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "Avaa kehittäjäportaali",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "mbar",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "mm/h",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "km/h",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "Kieliasetukset",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "Kieli",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "Valitse haluamasi kieli. Jotkin muutokset saattavat vaatia laajennuksen uudelleenkäynnistyksen.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "Kieliasetukset tallennettu. Käynnistä selaimesi uudelleen, jotta muutokset tulevat voimaan.",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "Yleiset asetukset",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "Näytettävät mittaukset",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "Valitse mitkä mittaukset näytetään kullekin moduulille (kun saatavilla).",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "CO² kynnysarvot",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "Keskimääräinen kynnys (ppm)",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "Huono kynnys (ppm)",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "Hyvä",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "Keskimääräinen",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "Huono",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "Testaa todennus",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "Valitse kielesi",
+    "description": "Text for language selection"
   }
 }

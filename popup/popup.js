@@ -6,6 +6,8 @@
  * https://github.com/CFenner/MMM-Netatmo
  */
 
+import { initTranslations, getMessage, applyTranslations } from '../scripts/translations.js';
+
 document.addEventListener('DOMContentLoaded', async () => {
   // Elements
   const loadingEl = document.getElementById('loading');
@@ -19,22 +21,42 @@ document.addEventListener('DOMContentLoaded', async () => {
   const settingsBtn = document.getElementById('settings-btn');
   const goToSettingsBtn = document.getElementById('go-to-settings');
   
-  // Set up localized text
-  localizeUI();
+  // Initialize translations and setup
+  await initializeApp();
   
-  // Load data and setup event listeners
-  await loadData();
-  setupEventListeners();
+  /**
+   * Initialize the application
+   */
+  async function initializeApp() {
+    showLoadingState();
+    
+    // Get user language setting
+    const { settings } = await chrome.storage.sync.get('settings');
+    const language = settings?.language || 'en';
+    
+    // Initialize translations
+    await initTranslations(language);
+    
+    // Localize UI
+    localizeUI();
+    
+    // Load data and setup event listeners
+    await loadData();
+    setupEventListeners();
+  }
   
   /**
    * Apply localization to UI elements
    */
   function localizeUI() {
-    document.getElementById('header-title').textContent = chrome.i18n.getMessage('extName');
-    document.getElementById('loading-text').textContent = chrome.i18n.getMessage('loadingData');
-    document.getElementById('auth-needed-text').textContent = chrome.i18n.getMessage('authError');
-    document.getElementById('auth-instructions-text').textContent = chrome.i18n.getMessage('apiInstructions');
-    document.getElementById('go-to-settings').textContent = chrome.i18n.getMessage('saveButton');
+    document.getElementById('header-title').textContent = getMessage('extName');
+    document.getElementById('loading-text').textContent = getMessage('loadingData');
+    document.getElementById('auth-needed-text').textContent = getMessage('authError');
+    document.getElementById('auth-instructions-text').textContent = getMessage('apiInstructions');
+    document.getElementById('go-to-settings').textContent = getMessage('saveButton');
+    
+    // Apply translations to any elements with data-i18n attributes
+    applyTranslations();
   }
   
   /**
@@ -118,7 +140,7 @@ document.addEventListener('DOMContentLoaded', async () => {
    */
   function renderData(data) {
     if (!data || !data.modules || data.modules.length === 0) {
-      showErrorState(chrome.i18n.getMessage('noDataAvailable'));
+      showErrorState(getMessage('noDataAvailable'));
       return;
     }
     
@@ -126,7 +148,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     chrome.storage.local.get('lastUpdate', (result) => {
       if (result.lastUpdate) {
         const timeString = formatTimeAgo(result.lastUpdate);
-        updateTimeEl.textContent = chrome.i18n.getMessage('lastUpdated', [timeString]);
+        updateTimeEl.textContent = getMessage('lastUpdated', [timeString]);
       }
     });
     
@@ -319,7 +341,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     const offlineEl = document.createElement('div');
     offlineEl.className = 'text-center mt-2 mb-2';
-    offlineEl.innerHTML = `<i class="fas fa-exclamation-triangle"></i> ${chrome.i18n.getMessage('notAvailable')}`;
+    offlineEl.innerHTML = `<i class="fas fa-exclamation-triangle"></i> ${getMessage('notAvailable')}`;
     contentEl.appendChild(offlineEl);
     
     moduleEl.appendChild(contentEl);
@@ -451,7 +473,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
     
     const key = nameMap[name] || name;
-    return chrome.i18n.getMessage(key) || key;
+    return getMessage(key) || key;
   }
   
   /**

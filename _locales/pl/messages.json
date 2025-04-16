@@ -4,7 +4,265 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Display weather information from your home weather station",
+    "message": "Wyświetl informacje pogodowe z Twojej domowej stacji pogodowej",
     "description": "The description of the extension"
+  },
+  "optionsPageTitle": {
+    "message": "Ustawienia StationWeather",
+    "description": "Title of the options page"
+  },
+  "clientIdLabel": {
+    "message": "ID Klienta",
+    "description": "Label for Client ID field"
+  },
+  "clientSecretLabel": {
+    "message": "Sekret Klienta",
+    "description": "Label for Client Secret field"
+  },
+  "refreshTokenLabel": {
+    "message": "Token odświeżania",
+    "description": "Label for Refresh Token field"
+  },
+  "updateIntervalLabel": {
+    "message": "Interwał aktualizacji (minuty)",
+    "description": "Label for update interval setting"
+  },
+  "displayModulesLabel": {
+    "message": "Wyświetl moduły",
+    "description": "Label for module display options"
+  },
+  "displayMeasurementsLabel": {
+    "message": "Wyświetl pomiary",
+    "description": "Label for measurement display options"
+  },
+  "saveButton": {
+    "message": "Zapisz ustawienia",
+    "description": "Text for the save button"
+  },
+  "settingsSaved": {
+    "message": "Ustawienia zapisane pomyślnie",
+    "description": "Confirmation message for saved settings"
+  },
+  "authError": {
+    "message": "Błąd uwierzytelniania. Sprawdź swoje dane uwierzytelniające.",
+    "description": "Error message for authentication issues"
+  },
+  "loadingData": {
+    "message": "Ładowanie danych...",
+    "description": "Message shown while loading data"
+  },
+  "lastUpdated": {
+    "message": "Ostatnia aktualizacja: $TIME$",
+    "description": "Shows when data was last updated",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5 minut temu"
+      }
+    }
+  },
+  "noDataAvailable": {
+    "message": "Brak dostępnych danych. Sprawdź połączenie i ustawienia.",
+    "description": "Shown when no data is available"
+  },
+  "temperature": {
+    "message": "Temperatura",
+    "description": "Label for temperature measurement"
+  },
+  "humidity": {
+    "message": "Wilgotność",
+    "description": "Label for humidity measurement"
+  },
+  "pressure": {
+    "message": "Ciśnienie",
+    "description": "Label for pressure measurement"
+  },
+  "pressureTrend": {
+    "message": "Ciśnienie (trend)",
+    "description": "Label for pressure trend"
+  },
+  "co2": {
+    "message": "CO²",
+    "description": "Label for CO2 measurement"
+  },
+  "noise": {
+    "message": "Hałas",
+    "description": "Label for noise measurement"
+  },
+  "rain": {
+    "message": "Deszcz",
+    "description": "Label for rain measurement"
+  },
+  "rainHourly": {
+    "message": "Deszcz (1h)",
+    "description": "Label for hourly rain measurement"
+  },
+  "rainDaily": {
+    "message": "Deszcz (24h)",
+    "description": "Label for daily rain measurement"
+  },
+  "wind": {
+    "message": "Wiatr",
+    "description": "Label for wind measurement"
+  },
+  "windDirection": {
+    "message": "Kierunek wiatru",
+    "description": "Label for wind direction"
+  },
+  "gusts": {
+    "message": "Porywy",
+    "description": "Label for wind gusts"
+  },
+  "gustsDirection": {
+    "message": "Kierunek porywów",
+    "description": "Label for gusts direction"
+  },
+  "battery": {
+    "message": "Bateria",
+    "description": "Label for battery status"
+  },
+  "signal": {
+    "message": "Sygnał",
+    "description": "Label for signal strength"
+  },
+  "wifi": {
+    "message": "WiFi",
+    "description": "Label for WiFi status"
+  },
+  "tempTrend": {
+    "message": "Temperatura (trend)",
+    "description": "Label for temperature trend"
+  },
+  "up": {
+    "message": "rosnący",
+    "description": "Trend indicator for rising values"
+  },
+  "stable": {
+    "message": "stabilny",
+    "description": "Trend indicator for stable values"
+  },
+  "down": {
+    "message": "malejący",
+    "description": "Trend indicator for falling values"
+  },
+  "notAvailable": {
+    "message": "niedostępny",
+    "description": "Indicator for unavailable data"
+  },
+  "showBatteryLabel": {
+    "message": "Pokaż stan baterii",
+    "description": "Label for battery display option"
+  },
+  "showSignalLabel": {
+    "message": "Pokaż siłę sygnału",
+    "description": "Label for signal display option"
+  },
+  "showTrendLabel": {
+    "message": "Pokaż trendy",
+    "description": "Label for trend display option"
+  },
+  "showStationNameLabel": {
+    "message": "Pokaż nazwę stacji",
+    "description": "Label for station name display option"
+  },
+  "apiInstructions": {
+    "message": "Aby korzystać z tego rozszerzenia, musisz utworzyć aplikację w portalu deweloperskim stacji pogodowej i autoryzować ją do dostępu do danych Twojej stacji pogodowej.",
+    "description": "Instructions for API setup"
+  },
+  "apiPortalLink": {
+    "message": "Otwórz Portal Deweloperski",
+    "description": "Link text for developer portal"
+  },
+  "tempUnit": {
+    "message": "°C",
+    "description": "Temperature unit (Celsius)"
+  },
+  "humidityUnit": {
+    "message": "%",
+    "description": "Humidity unit"
+  },
+  "pressureUnit": {
+    "message": "mbar",
+    "description": "Pressure unit (millibar)"
+  },
+  "co2Unit": {
+    "message": "ppm",
+    "description": "CO2 unit (parts per million)"
+  },
+  "noiseUnit": {
+    "message": "dB",
+    "description": "Noise unit (decibel)"
+  },
+  "rainUnit": {
+    "message": "mm/h",
+    "description": "Rain unit (millimeters per hour)"
+  },
+  "windUnit": {
+    "message": "km/h",
+    "description": "Wind unit (kilometers per hour)"
+  },
+  "degreeUnit": {
+    "message": "°",
+    "description": "Degree symbol for angles"
+  },
+  "languageSettingsTitle": {
+    "message": "Ustawienia języka",
+    "description": "Title for language settings section"
+  },
+  "languageLabel": {
+    "message": "Język",
+    "description": "Label for language selector"
+  },
+  "languageHelp": {
+    "message": "Wybierz preferowany język. Niektóre zmiany mogą wymagać ponownego uruchomienia rozszerzenia.",
+    "description": "Help text for language selector"
+  },
+  "languageChangeRestart": {
+    "message": "Ustawienia języka zapisane. Uruchom ponownie przeglądarkę, aby zmiany zaczęły obowiązywać.",
+    "description": "Message shown when language is changed"
+  },
+  "generalOptionsTitle": {
+    "message": "Opcje ogólne",
+    "description": "Title for general options section"
+  },
+  "measurementsTitle": {
+    "message": "Pomiary do wyświetlenia",
+    "description": "Title for measurements section"
+  },
+  "measurementsDescription": {
+    "message": "Wybierz, które pomiary mają być wyświetlane dla każdego modułu (jeśli dostępne).",
+    "description": "Description for measurements selector"
+  },
+  "co2ThresholdsTitle": {
+    "message": "Progi CO²",
+    "description": "Title for CO2 thresholds section"
+  },
+  "averageThresholdLabel": {
+    "message": "Próg średni (ppm)",
+    "description": "Label for average CO2 threshold"
+  },
+  "badThresholdLabel": {
+    "message": "Próg zły (ppm)",
+    "description": "Label for bad CO2 threshold"
+  },
+  "goodLabel": {
+    "message": "Dobry",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "Średni",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "Zły",
+    "description": "Label for bad CO2 level"
+  },
+  "testAuthText": {
+    "message": "Testuj uwierzytelnianie",
+    "description": "Text for authentication test button"
+  },
+  "selectLanguageText": {
+    "message": "Wybierz swój język",
+    "description": "Text for language selection"
   }
 }

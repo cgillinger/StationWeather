@@ -11,7 +11,7 @@
 <body>
   <div class="container">
     <header>
-      <h1><img src="../images/station-logo.png" alt="StationWeather" class="logo"> <span id="options-title">StationWeather Settings</span></h1>
+      <h1><img src="../images/station-logo.png" alt="StationWeather" class="logo"> <span id="options-title" data-i18n="optionsPageTitle">StationWeather Settings</span></h1>
     </header>
     
     <div class="tabs">
@@ -24,11 +24,11 @@
       <!-- Authentication Tab -->
       <div id="auth-tab" class="tab-pane active">
         <div class="section">
-          <h2 id="auth-section-title">API Authentication</h2>
-          <p id="auth-instructions" class="section-description">
+          <h2 id="auth-section-title" data-i18n="optionsPageTitle">API Authentication</h2>
+          <p id="auth-instructions" class="section-description" data-i18n="apiInstructions">
             To use this extension, you need to create an application in the weather station developer portal and authorize it to access your weather station data.
           </p>
-          <a href="https://dev.netatmo.com/apps" target="_blank" id="api-portal-link" class="nav-link">
+          <a href="https://dev.netatmo.com/apps" target="_blank" id="api-portal-link" class="nav-link" data-i18n="apiPortalLink">
             <i class="fas fa-external-link-alt"></i> Open Developer Portal
           </a>
           
@@ -39,17 +39,17 @@
           
           <form id="auth-form">
             <div class="form-group">
-              <label for="client-id" id="client-id-label">Client ID</label>
+              <label for="client-id" id="client-id-label" data-i18n="clientIdLabel">Client ID</label>
               <input type="text" id="client-id" placeholder="Enter your application client ID">
             </div>
             
             <div class="form-group">
-              <label for="client-secret" id="client-secret-label">Client Secret</label>
+              <label for="client-secret" id="client-secret-label" data-i18n="clientSecretLabel">Client Secret</label>
               <input type="password" id="client-secret" placeholder="Enter your application client secret">
             </div>
             
             <div class="form-group">
-              <label for="refresh-token" id="refresh-token-label">Refresh Token</label>
+              <label for="refresh-token" id="refresh-token-label" data-i18n="refreshTokenLabel">Refresh Token</label>
               <input type="text" id="refresh-token" placeholder="Enter your refresh token">
               <div class="form-help" id="refresh-token-help">
                 Generate a token with 'read_station' scope in the developer portal.
@@ -57,7 +57,7 @@
             </div>
             
             <div class="form-group">
-              <label for="update-interval" id="update-interval-label">Update Interval (minutes)</label>
+              <label for="update-interval" id="update-interval-label" data-i18n="updateIntervalLabel">Update Interval (minutes)</label>
               <input type="number" id="update-interval" min="1" max="60" value="3">
               <div class="form-help" id="update-interval-help">
                 How often to fetch new data (data updates every 10 minutes).
@@ -66,10 +66,10 @@
             
             <div class="form-actions">
               <button type="button" id="test-auth-btn" class="btn btn-secondary">
-                <i class="fas fa-vial"></i> <span id="test-auth-text">Test Authentication</span>
+                <i class="fas fa-vial"></i> <span id="test-auth-text" data-i18n="testAuthText">Test Authentication</span>
               </button>
               <button type="submit" id="save-auth-btn" class="btn btn-primary">
-                <i class="fas fa-save"></i> <span id="save-auth-text">Save Settings</span>
+                <i class="fas fa-save"></i> <span id="save-auth-text" data-i18n="saveButton">Save Settings</span>
               </button>
             </div>
           </form>
@@ -79,40 +79,40 @@
       <!-- Display Options Tab -->
       <div id="display-tab" class="tab-pane">
         <div class="section">
-          <h2 id="display-section-title">Display Options</h2>
-          <p id="display-instructions" class="section-description">
+          <h2 id="display-section-title" data-i18n="displayModulesLabel">Display Options</h2>
+          <p id="display-instructions" class="section-description" data-i18n="apiInstructions">
             Customize how weather information is displayed in the extension.
           </p>
           
           <form id="display-form">
             <div class="form-group">
-              <h3 id="general-options-title">General Options</h3>
+              <h3 id="general-options-title" data-i18n="generalOptionsTitle">General Options</h3>
               
               <div class="form-check">
                 <input type="checkbox" id="show-battery" checked>
-                <label for="show-battery" id="show-battery-label">Show battery status</label>
+                <label for="show-battery" id="show-battery-label" data-i18n="showBatteryLabel">Show battery status</label>
               </div>
               
               <div class="form-check">
                 <input type="checkbox" id="show-signal" checked>
-                <label for="show-signal" id="show-signal-label">Show signal strength</label>
+                <label for="show-signal" id="show-signal-label" data-i18n="showSignalLabel">Show signal strength</label>
               </div>
               
               <div class="form-check">
                 <input type="checkbox" id="show-trend" checked>
-                <label for="show-trend" id="show-trend-label">Show trends</label>
+                <label for="show-trend" id="show-trend-label" data-i18n="showTrendLabel">Show trends</label>
               </div>
               
               <div class="form-check">
                 <input type="checkbox" id="show-station-name" checked>
-                <label for="show-station-name" id="show-station-name-label">Show station name</label>
+                <label for="show-station-name" id="show-station-name-label" data-i18n="showStationNameLabel">Show station name</label>
               </div>
               
               <div class="form-group">
-                <h3 id="language-settings-title">Language Settings</h3>
+                <h3 id="language-settings-title" data-i18n="languageSettingsTitle">Language Settings</h3>
                 
                 <div class="form-group">
-                  <label for="language-selector" id="language-label">Language</label>
+                  <label for="language-selector" id="language-label" data-i18n="languageLabel">Language</label>
                   <select id="language-selector" class="form-control">
                     <option value="en">English</option>
                     <option value="sv">Svenska</option>
@@ -132,8 +132,9 @@
                     <option value="it">Italiano</option>
                     <option value="pl">Polski</option>
                     <option value="nl">Nederlands</option>
+                    <option value="uk">Українська</option>
                   </select>
-                  <div class="form-help" id="language-help">
+                  <div class="form-help" id="language-help" data-i18n="languageHelp">
                     Select your preferred language. Some changes may require an extension restart.
                   </div>
                 </div>
@@ -141,75 +142,75 @@
             </div>
             
             <div class="form-group">
-              <h3 id="measurements-title">Measurements to Display</h3>
-              <p id="measurements-description" class="form-help">
+              <h3 id="measurements-title" data-i18n="measurementsTitle">Measurements to Display</h3>
+              <p id="measurements-description" class="form-help" data-i18n="measurementsDescription">
                 Select which measurements to show for each module (when available).
               </p>
               
               <div class="measurement-selector">
                 <div class="form-check">
                   <input type="checkbox" id="show-temperature" checked>
-                  <label for="show-temperature" id="show-temperature-label">Temperature</label>
+                  <label for="show-temperature" id="show-temperature-label" data-i18n="temperature">Temperature</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-humidity" checked>
-                  <label for="show-humidity" id="show-humidity-label">Humidity</label>
+                  <label for="show-humidity" id="show-humidity-label" data-i18n="humidity">Humidity</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-pressure" checked>
-                  <label for="show-pressure" id="show-pressure-label">Pressure</label>
+                  <label for="show-pressure" id="show-pressure-label" data-i18n="pressure">Pressure</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-co2" checked>
-                  <label for="show-co2" id="show-co2-label">CO²</label>
+                  <label for="show-co2" id="show-co2-label" data-i18n="co2">CO²</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-noise" checked>
-                  <label for="show-noise" id="show-noise-label">Noise</label>
+                  <label for="show-noise" id="show-noise-label" data-i18n="noise">Noise</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-rain" checked>
-                  <label for="show-rain" id="show-rain-label">Rain</label>
+                  <label for="show-rain" id="show-rain-label" data-i18n="rain">Rain</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-wind" checked>
-                  <label for="show-wind" id="show-wind-label">Wind</label>
+                  <label for="show-wind" id="show-wind-label" data-i18n="wind">Wind</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-wind-angle" checked>
-                  <label for="show-wind-angle" id="show-wind-angle-label">Wind Direction</label>
+                  <label for="show-wind-angle" id="show-wind-angle-label" data-i18n="windDirection">Wind Direction</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-gust" checked>
-                  <label for="show-gust" id="show-gust-label">Gusts</label>
+                  <label for="show-gust" id="show-gust-label" data-i18n="gusts">Gusts</label>
                 </div>
                 
                 <div class="form-check">
                   <input type="checkbox" id="show-gust-angle" checked>
-                  <label for="show-gust-angle" id="show-gust-angle-label">Gusts Direction</label>
+                  <label for="show-gust-angle" id="show-gust-angle-label" data-i18n="gustsDirection">Gusts Direction</label>
                 </div>
               </div>
             </div>
             
             <div class="form-group">
-              <h3 id="co2-thresholds-title">CO² Thresholds</h3>
+              <h3 id="co2-thresholds-title" data-i18n="co2ThresholdsTitle">CO² Thresholds</h3>
               
               <div class="threshold-inputs">
                 <div>
-                  <label for="co2-average" id="co2-average-label">Average Threshold (ppm)</label>
+                  <label for="co2-average" id="co2-average-label" data-i18n="averageThresholdLabel">Average Threshold (ppm)</label>
                   <input type="number" id="co2-average" min="400" max="5000" value="800">
                 </div>
                 
                 <div>
-                  <label for="co2-bad" id="co2-bad-label">Bad Threshold (ppm)</label>
+                  <label for="co2-bad" id="co2-bad-label" data-i18n="badThresholdLabel">Bad Threshold (ppm)</label>
                   <input type="number" id="co2-bad" min="400" max="5000" value="1800">
                 </div>
               </div>
@@ -217,22 +218,22 @@
               <div class="co2-indicator-preview">
                 <div>
                   <div class="co2-preview co2-good"></div>
-                  <label id="co2-good-label">Good</label>
+                  <label id="co2-good-label" data-i18n="goodLabel">Good</label>
                 </div>
                 <div>
                   <div class="co2-preview co2-average"></div>
-                  <label id="co2-average-preview-label">Average</label>
+                  <label id="co2-average-preview-label" data-i18n="averageLabel">Average</label>
                 </div>
                 <div>
                   <div class="co2-preview co2-bad"></div>
-                  <label id="co2-bad-preview-label">Bad</label>
+                  <label id="co2-bad-preview-label" data-i18n="badLabel">Bad</label>
                 </div>
               </div>
             </div>
             
             <div class="form-actions">
               <button type="submit" id="save-display-btn" class="btn btn-primary">
-                <i class="fas fa-save"></i> <span id="save-display-text">Save Settings</span>
+                <i class="fas fa-save"></i> <span id="save-display-text" data-i18n="saveButton">Save Settings</span>
               </button>
             </div>
           </form>
@@ -245,7 +246,7 @@
           <h2 id="about-title">About StationWeather</h2>
           
           <div class="about-content">
-            <p id="about-description">
+            <p id="about-description" data-i18n="extDescription">
               This extension displays weather information from your home weather station.
             </p>
             
@@ -277,6 +278,6 @@
     </div>
   </div>
   
-  <script src="options.js"></script>
+  <script src="options.js" type="module"></script>
 </body>
 </html>

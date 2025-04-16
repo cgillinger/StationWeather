@@ -4,81 +4,81 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "Visualizza informazioni meteo dalla tua stazione meteorologica domestica",
+    "message": "Відображає інформацію про погоду з вашої домашньої метеостанції",
     "description": "The description of the extension"
   },
   "optionsPageTitle": {
-    "message": "Impostazioni StationWeather",
+    "message": "Налаштування StationWeather",
     "description": "Title of the options page"
   },
   "clientIdLabel": {
-    "message": "ID Cliente",
+    "message": "ID клієнта",
     "description": "Label for Client ID field"
   },
   "clientSecretLabel": {
-    "message": "Segreto Cliente",
+    "message": "Секрет клієнта",
     "description": "Label for Client Secret field"
   },
   "refreshTokenLabel": {
-    "message": "Token di Aggiornamento",
+    "message": "Токен оновлення",
     "description": "Label for Refresh Token field"
   },
   "updateIntervalLabel": {
-    "message": "Intervallo di aggiornamento (minuti)",
+    "message": "Інтервал оновлення (хвилини)",
     "description": "Label for update interval setting"
   },
   "displayModulesLabel": {
-    "message": "Visualizza moduli",
+    "message": "Відображення модулів",
     "description": "Label for module display options"
   },
   "displayMeasurementsLabel": {
-    "message": "Visualizza misurazioni",
+    "message": "Відображення вимірювань",
     "description": "Label for measurement display options"
   },
   "saveButton": {
-    "message": "Salva impostazioni",
+    "message": "Зберегти налаштування",
     "description": "Text for the save button"
   },
   "settingsSaved": {
-    "message": "Impostazioni salvate con successo",
+    "message": "Налаштування успішно збережено",
     "description": "Confirmation message for saved settings"
   },
   "authError": {
-    "message": "Errore di autenticazione. Controlla le tue credenziali.",
+    "message": "Помилка аутентифікації. Будь ласка, перевірте ваші облікові дані.",
     "description": "Error message for authentication issues"
   },
   "loadingData": {
-    "message": "Caricamento dati...",
+    "message": "Завантаження даних...",
     "description": "Message shown while loading data"
   },
   "lastUpdated": {
-    "message": "Ultimo aggiornamento: $TIME$",
+    "message": "Останнє оновлення: $TIME$",
     "description": "Shows when data was last updated",
     "placeholders": {
       "time": {
         "content": "$1",
-        "example": "5 minuti fa"
+        "example": "5 хвилин тому"
       }
     }
   },
   "noDataAvailable": {
-    "message": "Nessun dato disponibile. Controlla la connessione e le impostazioni.",
+    "message": "Немає доступних даних. Будь ласка, перевірте ваше з'єднання та налаштування.",
     "description": "Shown when no data is available"
   },
   "temperature": {
-    "message": "Temperatura",
+    "message": "Температура",
     "description": "Label for temperature measurement"
   },
   "humidity": {
-    "message": "Umidità",
+    "message": "Вологість",
     "description": "Label for humidity measurement"
   },
   "pressure": {
-    "message": "Pressione",
+    "message": "Тиск",
     "description": "Label for pressure measurement"
   },
   "pressureTrend": {
-    "message": "Pressione (tendenza)",
+    "message": "Тиск (тренд)",
     "description": "Label for pressure trend"
   },
   "co2": {
@@ -86,43 +86,43 @@
     "description": "Label for CO2 measurement"
   },
   "noise": {
-    "message": "Rumore",
+    "message": "Шум",
     "description": "Label for noise measurement"
   },
   "rain": {
-    "message": "Pioggia",
+    "message": "Опади",
     "description": "Label for rain measurement"
   },
   "rainHourly": {
-    "message": "Pioggia (1h)",
+    "message": "Опади (1год)",
     "description": "Label for hourly rain measurement"
   },
   "rainDaily": {
-    "message": "Pioggia (24h)",
+    "message": "Опади (24год)",
     "description": "Label for daily rain measurement"
   },
   "wind": {
-    "message": "Vento",
+    "message": "Вітер",
     "description": "Label for wind measurement"
   },
   "windDirection": {
-    "message": "Direzione del vento",
+    "message": "Напрямок вітру",
     "description": "Label for wind direction"
   },
   "gusts": {
-    "message": "Raffiche",
+    "message": "Пориви",
     "description": "Label for wind gusts"
   },
   "gustsDirection": {
-    "message": "Direzione raffiche",
+    "message": "Напрямок поривів",
     "description": "Label for gusts direction"
   },
   "battery": {
-    "message": "Batteria",
+    "message": "Батарея",
     "description": "Label for battery status"
   },
   "signal": {
-    "message": "Segnale",
+    "message": "Сигнал",
     "description": "Label for signal strength"
   },
   "wifi": {
@@ -130,47 +130,47 @@
     "description": "Label for WiFi status"
   },
   "tempTrend": {
-    "message": "Temperatura (tendenza)",
+    "message": "Температура (тренд)",
     "description": "Label for temperature trend"
   },
   "up": {
-    "message": "in aumento",
+    "message": "підвищується",
     "description": "Trend indicator for rising values"
   },
   "stable": {
-    "message": "stabile",
+    "message": "стабільно",
     "description": "Trend indicator for stable values"
   },
   "down": {
-    "message": "in diminuzione",
+    "message": "знижується",
     "description": "Trend indicator for falling values"
   },
   "notAvailable": {
-    "message": "non disponibile",
+    "message": "недоступно",
     "description": "Indicator for unavailable data"
   },
   "showBatteryLabel": {
-    "message": "Mostra stato batteria",
+    "message": "Показувати стан батареї",
     "description": "Label for battery display option"
   },
   "showSignalLabel": {
-    "message": "Mostra potenza segnale",
+    "message": "Показувати силу сигналу",
     "description": "Label for signal display option"
   },
   "showTrendLabel": {
-    "message": "Mostra tendenze",
+    "message": "Показувати тренди",
     "description": "Label for trend display option"
   },
   "showStationNameLabel": {
-    "message": "Mostra nome stazione",
+    "message": "Показувати назву станції",
     "description": "Label for station name display option"
   },
   "apiInstructions": {
-    "message": "Per utilizzare questa estensione, devi creare un'applicazione nel portale sviluppatori della stazione meteorologica e autorizzarla ad accedere ai dati della tua stazione.",
+    "message": "Для використання цього розширення необхідно створити додаток у порталі розробника метеостанції та авторизувати його для доступу до даних вашої метеостанції.",
     "description": "Instructions for API setup"
   },
   "apiPortalLink": {
-    "message": "Apri Portale Sviluppatori",
+    "message": "Відкрити портал розробника",
     "description": "Link text for developer portal"
   },
   "tempUnit": {
@@ -182,7 +182,7 @@
     "description": "Humidity unit"
   },
   "pressureUnit": {
-    "message": "mbar",
+    "message": "гПа",
     "description": "Pressure unit (millibar)"
   },
   "co2Unit": {
@@ -190,15 +190,15 @@
     "description": "CO2 unit (parts per million)"
   },
   "noiseUnit": {
-    "message": "dB",
+    "message": "дБ",
     "description": "Noise unit (decibel)"
   },
   "rainUnit": {
-    "message": "mm/h",
+    "message": "мм/год",
     "description": "Rain unit (millimeters per hour)"
   },
   "windUnit": {
-    "message": "km/h",
+    "message": "км/год",
     "description": "Wind unit (kilometers per hour)"
   },
   "degreeUnit": {
@@ -206,63 +206,63 @@
     "description": "Degree symbol for angles"
   },
   "languageSettingsTitle": {
-    "message": "Impostazioni lingua",
+    "message": "Налаштування мови",
     "description": "Title for language settings section"
   },
   "languageLabel": {
-    "message": "Lingua",
+    "message": "Мова",
     "description": "Label for language selector"
   },
   "languageHelp": {
-    "message": "Seleziona la tua lingua preferita. Alcune modifiche potrebbero richiedere il riavvio dell'estensione.",
+    "message": "Виберіть вашу мову. Деякі зміни можуть вимагати перезапуску розширення.",
     "description": "Help text for language selector"
   },
   "languageChangeRestart": {
-    "message": "Impostazioni lingua salvate. Riavvia il browser per applicare le modifiche.",
+    "message": "Налаштування мови збережено. Перезапустіть браузер, щоб зміни набули чинності.",
     "description": "Message shown when language is changed"
   },
   "generalOptionsTitle": {
-    "message": "Opzioni generali",
+    "message": "Загальні налаштування",
     "description": "Title for general options section"
   },
   "measurementsTitle": {
-    "message": "Misurazioni da visualizzare",
+    "message": "Вимірювання для відображення",
     "description": "Title for measurements section"
   },
   "measurementsDescription": {
-    "message": "Seleziona quali misurazioni mostrare per ogni modulo (quando disponibili).",
+    "message": "Виберіть, які вимірювання відображати для кожного модуля (якщо доступні).",
     "description": "Description for measurements selector"
   },
   "co2ThresholdsTitle": {
-    "message": "Soglie CO²",
+    "message": "Порогові значення CO²",
     "description": "Title for CO2 thresholds section"
   },
   "averageThresholdLabel": {
-    "message": "Soglia media (ppm)",
+    "message": "Середній поріг (ppm)",
     "description": "Label for average CO2 threshold"
   },
   "badThresholdLabel": {
-    "message": "Soglia pessima (ppm)",
+    "message": "Поганий поріг (ppm)",
     "description": "Label for bad CO2 threshold"
   },
   "goodLabel": {
-    "message": "Buono",
+    "message": "Добре",
     "description": "Label for good CO2 level"
   },
   "averageLabel": {
-    "message": "Medio",
+    "message": "Середнє",
     "description": "Label for average CO2 level"
   },
   "badLabel": {
-    "message": "Pessimo",
+    "message": "Погано",
     "description": "Label for bad CO2 level"
   },
   "testAuthText": {
-    "message": "Testa autenticazione",
+    "message": "Перевірити аутентифікацію",
     "description": "Text for authentication test button"
   },
   "selectLanguageText": {
-    "message": "Seleziona la tua lingua",
+    "message": "Виберіть вашу мову",
     "description": "Text for language selection"
   }
 }
