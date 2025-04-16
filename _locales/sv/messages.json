@@ -161,6 +161,10 @@
     "message": "Visa trender",
     "description": "Label for trend display option"
   },
+  "showStationNameLabel": {
+    "message": "Visa stationsnamn",
+    "description": "Label for station name display option"
+  },
   "apiInstructions": {
     "message": "För att använda detta tillägg behöver du skapa en applikation i väderstationens utvecklarportal och auktorisera den att få tillgång till din väderstations data.",
     "description": "Instructions for API setup"
@@ -216,5 +220,81 @@
   "languageChangeRestart": {
     "message": "Språkinställningar sparade. Starta om din webbläsare för att ändringarna ska träda i kraft.",
     "description": "Message shown when language is changed"
+  },
+  "apiSetupTab": {
+    "message": "API-inställningar",
+    "description": "Tab title for API setup"
+  },
+  "displayOptionsTab": {
+    "message": "Visningsalternativ",
+    "description": "Tab title for display options"
+  },
+  "aboutTab": {
+    "message": "Om",
+    "description": "Tab title for about section"
+  },
+  "refreshButtonTitle": {
+    "message": "Uppdatera data",
+    "description": "Title for refresh button"
+  },
+  "settingsButtonTitle": {
+    "message": "Inställningar",
+    "description": "Title for settings button"
+  },
+  "goToSettings": {
+    "message": "Öppna inställningar",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Anpassa hur väderinformation visas i tillägget.",
+    "description": "Description for display options tab"
+  },
+  "goodLabel": {
+    "message": "Bra",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "Medel",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "Dålig",
+    "description": "Label for bad CO2 level"
+  },
+  "undefinedLabel": {
+    "message": "Okänd",
+    "description": "Label for undefined status"
+  },
+  "humidityExplanation": {
+    "message": "Luftfuktighet",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO² värde",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Om StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Erkännande",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Baserat på MagicMirror-modulen av Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Ursprungligt kodreferens",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Integritet",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Detta tillägg ansluter endast till väderstationens API och samlar inte in eller delar personlig data. Dina API-uppgifter lagras lokalt i din webbläsares säkra lagring.",
+    "description": "Text for privacy section"
   }
 }

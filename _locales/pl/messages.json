@@ -221,29 +221,33 @@
     "message": "Ustawienia języka zapisane. Uruchom ponownie przeglądarkę, aby zmiany zaczęły obowiązywać.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "Opcje ogólne",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "Ustawienia API",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "Pomiary do wyświetlenia",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "Opcje wyświetlania",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "Wybierz, które pomiary mają być wyświetlane dla każdego modułu (jeśli dostępne).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "O programie",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "Progi CO²",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "Odśwież dane",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "Próg średni (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "Ustawienia",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "Próg zły (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "Otwórz ustawienia",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Dostosuj sposób wyświetlania informacji pogodowych w rozszerzeniu.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "Dobry",
@@ -257,12 +261,40 @@
     "message": "Zły",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "Testuj uwierzytelnianie",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "Nieokreślony",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "Wybierz swój język",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "Wilgotność",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "Wartość CO²",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "O StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Autorstwo",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Bazuje na module MagicMirror autorstwa Christophera Fennera.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Oryginalne repozytorium",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Prywatność",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "To rozszerzenie łączy się tylko z API stacji pogodowej i nie zbiera ani nie udostępnia żadnych danych osobowych. Twoje dane uwierzytelniające API są przechowywane lokalnie w bezpiecznym magazynie Twojej przeglądarki.",
+    "description": "Text for privacy section"
   }
 }

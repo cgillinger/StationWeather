@@ -221,29 +221,33 @@
     "message": "Tungumálastillingar vistaðar. Endurræstu vafrann til að breytingarnar taki gildi.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "Almennar stillingar",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "API stillingar",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "Mælingar til að sýna",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "Skjástillingar",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "Veldu hvaða mælingar á að sýna fyrir hverja einingu (þegar þær eru í boði).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "Um",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "CO² Viðmiðunarmörk",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "Endurnýja gögn",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "Meðalmörk (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "Stillingar",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "Slæm mörk (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "Opna stillingar",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Sérsníða hvernig veðurupplýsingar birtast í viðbótinni.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "Gott",
@@ -257,12 +261,40 @@
     "message": "Slæmt",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "Prófa auðkenningu",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "Óskilgreint",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "Veldu tungumál þitt",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "Rakastig",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO² gildi",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Um StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Þakkir",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Byggt á MagicMirror einingu eftir Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Upprunalegt gagnasafn",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Persónuvernd",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Þessi viðbót tengist aðeins við API veðurstöðvarinnar og safnar ekki eða deilir persónulegum gögnum. API lyklar þínir eru vistaðir staðbundið í öruggri geymslu vafrans þíns.",
+    "description": "Text for privacy section"
   }
 }

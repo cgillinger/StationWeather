@@ -221,48 +221,80 @@
     "message": "Налаштування мови збережено. Перезапустіть браузер, щоб зміни набули чинності.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "Загальні налаштування",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "Налаштування API",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "Вимірювання для відображення",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "Параметри відображення",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "Виберіть, які вимірювання відображати для кожного модуля (якщо доступні).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "Про додаток",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "Порогові значення CO²",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "Оновити дані",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "Середній поріг (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "Налаштування",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "Поганий поріг (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "Відкрити налаштування",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Налаштуйте, як інформація про погоду відображається в розширенні.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
-    "message": "Добре",
+    "message": "Добрий",
     "description": "Label for good CO2 level"
   },
   "averageLabel": {
-    "message": "Середнє",
+    "message": "Середній",
     "description": "Label for average CO2 level"
   },
   "badLabel": {
-    "message": "Погано",
+    "message": "Поганий",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "Перевірити аутентифікацію",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "Невизначений",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "Виберіть вашу мову",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "Вологість",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "Значення CO²",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Про StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Авторство",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "На основі модуля MagicMirror від Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Оригінальний репозиторій",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Конфіденційність",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Це розширення підключається лише до API метеостанції та не збирає і не поширює особисті дані. Ваші облікові дані API зберігаються локально в безпечному сховищі вашого браузера.",
+    "description": "Text for privacy section"
   }
 }

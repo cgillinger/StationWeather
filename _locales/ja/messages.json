@@ -221,48 +221,80 @@
     "message": "言語設定が保存されました。変更を適用するにはブラウザを再起動してください。",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "一般設定",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "API設定",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "表示する測定値",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "表示オプション",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "各モジュールに表示する測定値を選択してください（利用可能な場合）。",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "詳細",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "CO²しきい値",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "データを更新",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "平均しきい値（ppm）",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "設定",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "悪いしきい値（ppm）",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "設定を開く",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "拡張機能内の天気情報の表示方法をカスタマイズします。",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "良好",
     "description": "Label for good CO2 level"
   },
   "averageLabel": {
-    "message": "平均",
+    "message": "普通",
     "description": "Label for average CO2 level"
   },
   "badLabel": {
-    "message": "悪い",
+    "message": "不良",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "認証テスト",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "未定義",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "言語を選択",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "湿度",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO²値",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "StationWeatherについて",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "帰属",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Christopher FennerによるMagicMirrorモジュールをベースにしています。",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "オリジナルリポジトリ",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "プライバシー",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "この拡張機能は気象ステーションのAPIにのみ接続し、個人データを収集または共有しません。APIの認証情報はブラウザの安全なストレージに保存されます。",
+    "description": "Text for privacy section"
   }
 }

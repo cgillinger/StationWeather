@@ -221,29 +221,33 @@
     "message": "Taalinstellingen opgeslagen. Start je browser opnieuw om de wijzigingen door te voeren.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "Algemene opties",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "API-instellingen",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "Weer te geven metingen",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "Weergave-opties",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "Selecteer welke metingen voor elke module moeten worden weergegeven (indien beschikbaar).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "Over",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "CO² Drempelwaarden",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "Gegevens vernieuwen",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "Gemiddelde drempel (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "Instellingen",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "Slechte drempel (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "Open instellingen",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Pas aan hoe weerinformatie wordt weergegeven in de extensie.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "Goed",
@@ -257,12 +261,40 @@
     "message": "Slecht",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "Authenticatie testen",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "Ongedefinieerd",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "Selecteer je taal",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "Luchtvochtigheid",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO² waarde",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Over StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Bronvermelding",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Gebaseerd op de MagicMirror module door Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Originele repository",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Privacy",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Deze extensie maakt alleen verbinding met de weerstation-API en verzamelt of deelt geen persoonlijke gegevens. Je API-gegevens worden lokaal opgeslagen in de beveiligde opslag van je browser.",
+    "description": "Text for privacy section"
   }
 }

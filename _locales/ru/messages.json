@@ -221,29 +221,33 @@
     "message": "Настройки языка сохранены. Перезапустите браузер, чтобы изменения вступили в силу.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "Общие настройки",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "Настройка API",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "Отображаемые измерения",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "Параметры отображения",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "Выберите, какие измерения отображать для каждого модуля (если доступны).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "О программе",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "Пороговые значения CO²",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "Обновить данные",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "Средний порог (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "Настройки",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "Плохой порог (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "Открыть настройки",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Настройте отображение информации о погоде в расширении.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "Хороший",
@@ -257,12 +261,40 @@
     "message": "Плохой",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "Проверить аутентификацию",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "Не определено",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "Выберите ваш язык",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "Влажность",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "Значение CO²",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "О StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Авторство",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Основано на модуле MagicMirror от Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Оригинальный репозиторий",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Конфиденциальность",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Это расширение подключается только к API метеостанции и не собирает и не передает личные данные. Ваши учетные данные API хранятся локально в защищенном хранилище вашего браузера.",
+    "description": "Text for privacy section"
   }
 }

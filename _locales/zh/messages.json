@@ -221,48 +221,80 @@
     "message": "语言设置已保存。请重启浏览器以使更改生效。",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "常规选项",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "API设置",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "要显示的测量值",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "显示选项",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "选择为每个模块显示哪些测量值（如可用）。",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "关于",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "CO²阈值",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "刷新数据",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "平均阈值（ppm）",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "设置",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "不良阈值（ppm）",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "打开设置",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "自定义如何在扩展中显示天气信息。",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "良好",
     "description": "Label for good CO2 level"
   },
   "averageLabel": {
-    "message": "平均",
+    "message": "一般",
     "description": "Label for average CO2 level"
   },
   "badLabel": {
-    "message": "不良",
+    "message": "差",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "测试认证",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "未定义",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "选择您的语言",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "湿度",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "二氧化碳值",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "关于 StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "致谢",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "基于 Christopher Fenner 的 MagicMirror 模块。",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "原始代码库",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "隐私",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "此扩展仅连接到气象站 API，不收集或共享任何个人数据。您的 API 凭据存储在浏览器的安全存储中。",
+    "description": "Text for privacy section"
   }
 }

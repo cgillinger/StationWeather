@@ -221,29 +221,33 @@
     "message": "भाषा सेटिंग्स सहेजी गईं। परिवर्तनों को लागू करने के लिए अपने ब्राउज़र को पुनरारंभ करें।",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "सामान्य विकल्प",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "API सेटअप",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "प्रदर्शित करने के लिए मापन",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "प्रदर्शन विकल्प",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "प्रत्येक मॉड्यूल के लिए कौन से मापन प्रदर्शित करने हैं, चुनें (जब उपलब्ध हों)।",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "बारे में",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "CO² सीमाएँ",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "डेटा रिफ्रेश करें",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "औसत सीमा (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "सेटिंग्स",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "खराब सीमा (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "सेटिंग्स खोलें",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "एक्सटेंशन में मौसम की जानकारी कैसे प्रदर्शित होती है, इसे अनुकूलित करें।",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "अच्छा",
@@ -257,12 +261,40 @@
     "message": "खराब",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "प्रमाणीकरण परीक्षण",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "अपरिभाषित",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "अपनी भाषा चुनें",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "आर्द्रता",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO² मान",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "StationWeather के बारे में",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "श्रेय",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Christopher Fenner द्वारा MagicMirror मॉड्यूल पर आधारित।",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "मूल रिपॉजिटरी",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "गोपनीयता",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "यह एक्सटेंशन केवल मौसम स्टेशन API से कनेक्ट करता है और किसी भी व्यक्तिगत डेटा को एकत्र या साझा नहीं करता है। आपके API क्रेडेंशियल आपके ब्राउज़र के सुरक्षित स्टोरेज में स्थानीय रूप से संग्रहीत किए जाते हैं।",
+    "description": "Text for privacy section"
   }
 }

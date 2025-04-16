@@ -161,6 +161,10 @@
     "message": "Show trends",
     "description": "Label for trend display option"
   },
+  "showStationNameLabel": {
+    "message": "Show station name",
+    "description": "Label for station name display option"
+  },
   "apiInstructions": {
     "message": "To use this extension, you need to create an application in the weather station developer portal and authorize it to access your weather station data.",
     "description": "Instructions for API setup"
@@ -216,5 +220,81 @@
   "languageChangeRestart": {
     "message": "Language settings saved. Restart your browser for changes to take effect.",
     "description": "Message shown when language is changed"
+  },
+  "apiSetupTab": {
+    "message": "API Setup",
+    "description": "Tab title for API setup"
+  },
+  "displayOptionsTab": {
+    "message": "Display Options",
+    "description": "Tab title for display options"
+  },
+  "aboutTab": {
+    "message": "About",
+    "description": "Tab title for about section"
+  },
+  "refreshButtonTitle": {
+    "message": "Refresh data",
+    "description": "Title for refresh button"
+  },
+  "settingsButtonTitle": {
+    "message": "Settings",
+    "description": "Title for settings button"
+  },
+  "goToSettings": {
+    "message": "Open Settings",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Customize how weather information is displayed in the extension.",
+    "description": "Description for display options tab"
+  },
+  "goodLabel": {
+    "message": "Good",
+    "description": "Label for good CO2 level"
+  },
+  "averageLabel": {
+    "message": "Average",
+    "description": "Label for average CO2 level"
+  },
+  "badLabel": {
+    "message": "Bad",
+    "description": "Label for bad CO2 level"
+  },
+  "undefinedLabel": {
+    "message": "Undefined",
+    "description": "Label for undefined status"
+  },
+  "humidityExplanation": {
+    "message": "Humidity",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO2 value",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "About StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Attribution",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Based on the MagicMirror module by Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Original Repository",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Privacy",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "This extension only connects to the weather station API and does not collect or share any personal data. Your API credentials are stored locally in your browser's secure storage.",
+    "description": "Text for privacy section"
   }
 }

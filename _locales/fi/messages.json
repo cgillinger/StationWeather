@@ -221,29 +221,33 @@
     "message": "Kieliasetukset tallennettu. Käynnistä selaimesi uudelleen, jotta muutokset tulevat voimaan.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "Yleiset asetukset",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "API-asetukset",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "Näytettävät mittaukset",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "Näyttöasetukset",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "Valitse mitkä mittaukset näytetään kullekin moduulille (kun saatavilla).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "Tietoja",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "CO² kynnysarvot",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "Päivitä tiedot",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "Keskimääräinen kynnys (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "Asetukset",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "Huono kynnys (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "Avaa asetukset",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Mukauta, miten säätiedot näytetään laajennuksessa.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "Hyvä",
@@ -257,12 +261,40 @@
     "message": "Huono",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "Testaa todennus",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "Määrittelemätön",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "Valitse kielesi",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "Kosteus",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO² arvo",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Tietoja StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Tekijätiedot",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Perustuu Christopher Fennerin MagicMirror-moduuliin.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Alkuperäinen koodivarasto",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Yksityisyys",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Tämä laajennus muodostaa yhteyden vain sääaseman API:in eikä kerää tai jaa henkilökohtaisia tietoja. API-tunnuksesi tallennetaan paikallisesti selaimesi suojattuun tallennustilaan.",
+    "description": "Text for privacy section"
   }
 }

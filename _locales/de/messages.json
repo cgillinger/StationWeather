@@ -264,5 +264,69 @@
   "selectLanguageText": {
     "message": "Wählen Sie Ihre Sprache",
     "description": "Text for language selection"
+  },
+  "apiSetupTab": {
+    "message": "API-Einrichtung",
+    "description": "Tab title for API setup"
+  },
+  "displayOptionsTab": {
+    "message": "Anzeigeoptionen",
+    "description": "Tab title for display options"
+  },
+  "aboutTab": {
+    "message": "Über",
+    "description": "Tab title for about section"
+  },
+  "refreshButtonTitle": {
+    "message": "Daten aktualisieren",
+    "description": "Title for refresh button"
+  },
+  "settingsButtonTitle": {
+    "message": "Einstellungen",
+    "description": "Title for settings button"
+  },
+  "goToSettings": {
+    "message": "Einstellungen öffnen",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Passen Sie an, wie Wetterinformationen in der Erweiterung angezeigt werden.",
+    "description": "Description for display options tab"
+  },
+  "undefinedLabel": {
+    "message": "Undefiniert",
+    "description": "Label for undefined status"
+  },
+  "humidityExplanation": {
+    "message": "Luftfeuchtigkeit",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO² Wert",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Über StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Zuordnung",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Basierend auf dem MagicMirror-Modul von Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Ursprüngliches Repository",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Datenschutz",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Diese Erweiterung verbindet sich nur mit der Wetterstations-API und sammelt oder teilt keine persönlichen Daten. Ihre API-Anmeldedaten werden lokal im sicheren Speicher Ihres Browsers gespeichert.",
+    "description": "Text for privacy section"
   }
 }

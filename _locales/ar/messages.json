@@ -221,29 +221,33 @@
     "message": "تم حفظ إعدادات اللغة. قم بإعادة تشغيل المتصفح لتفعيل التغييرات.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "الخيارات العامة",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "إعداد API",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "القياسات المراد عرضها",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "خيارات العرض",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "اختر القياسات التي سيتم عرضها لكل وحدة (عند توفرها).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "حول",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "عتبات ثاني أكسيد الكربون",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "تحديث البيانات",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "العتبة المتوسطة (جزء في المليون)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "الإعدادات",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "العتبة السيئة (جزء في المليون)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "فتح الإعدادات",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "تخصيص كيفية عرض معلومات الطقس في الامتداد.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "جيد",
@@ -257,12 +261,40 @@
     "message": "سيء",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "اختبار المصادقة",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "غير محدد",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "اختر لغتك",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "الرطوبة",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "قيمة ثاني أكسيد الكربون",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "حول StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "الإسناد",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "مبني على وحدة MagicMirror بواسطة Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "المستودع الأصلي",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "الخصوصية",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "يتصل هذا الامتداد فقط بـ API للمحطة الجوية ولا يجمع أو يشارك أي بيانات شخصية. يتم تخزين بيانات اعتماد API الخاصة بك محليًا في التخزين الآمن لمتصفحك.",
+    "description": "Text for privacy section"
   }
 }

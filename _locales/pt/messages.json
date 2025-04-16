@@ -264,5 +264,69 @@
   "selectLanguageText": {
     "message": "Selecione seu idioma",
     "description": "Text for language selection"
+  },
+  "apiSetupTab": {
+    "message": "Configuração API",
+    "description": "Tab title for API setup"
+  },
+  "displayOptionsTab": {
+    "message": "Opções de Exibição",
+    "description": "Tab title for display options"
+  },
+  "aboutTab": {
+    "message": "Sobre",
+    "description": "Tab title for about section"
+  },
+  "refreshButtonTitle": {
+    "message": "Atualizar dados",
+    "description": "Title for refresh button"
+  },
+  "settingsButtonTitle": {
+    "message": "Configurações",
+    "description": "Title for settings button"
+  },
+  "goToSettings": {
+    "message": "Abrir Configurações",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Personalize como as informações meteorológicas são exibidas na extensão.",
+    "description": "Description for display options tab"
+  },
+  "undefinedLabel": {
+    "message": "Indefinido",
+    "description": "Label for undefined status"
+  },
+  "humidityExplanation": {
+    "message": "Umidade",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "Valor de CO²",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Sobre o StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Atribuição",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Baseado no módulo MagicMirror de Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Repositório Original",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Privacidade",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Esta extensão conecta-se apenas à API da estação meteorológica e não coleta ou compartilha dados pessoais. Suas credenciais de API são armazenadas localmente no armazenamento seguro do seu navegador.",
+    "description": "Text for privacy section"
   }
 }

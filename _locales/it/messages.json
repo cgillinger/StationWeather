@@ -221,29 +221,33 @@
     "message": "Impostazioni lingua salvate. Riavvia il browser per applicare le modifiche.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "Opzioni generali",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "Configurazione API",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "Misurazioni da visualizzare",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "Opzioni di visualizzazione",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "Seleziona quali misurazioni mostrare per ogni modulo (quando disponibili).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "Info",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "Soglie CO²",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "Aggiorna dati",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "Soglia media (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "Impostazioni",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "Soglia pessima (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "Apri impostazioni",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Personalizza come le informazioni meteo vengono visualizzate nell'estensione.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "Buono",
@@ -254,15 +258,43 @@
     "description": "Label for average CO2 level"
   },
   "badLabel": {
-    "message": "Pessimo",
+    "message": "Cattivo",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "Testa autenticazione",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "Non definito",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "Seleziona la tua lingua",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "Umidità",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "Valore CO²",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Informazioni su StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Riconoscimenti",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Basato sul modulo MagicMirror di Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Repository originale",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Privacy",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Questa estensione si connette solo all'API della stazione meteorologica e non raccoglie o condivide dati personali. Le tue credenziali API sono archiviate localmente nell'archivio sicuro del tuo browser.",
+    "description": "Text for privacy section"
   }
 }

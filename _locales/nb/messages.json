@@ -221,29 +221,33 @@
     "message": "Språkinnstillinger lagret. Start nettleseren på nytt for at endringene skal tre i kraft.",
     "description": "Message shown when language is changed"
   },
-  "generalOptionsTitle": {
-    "message": "Generelle innstillinger",
-    "description": "Title for general options section"
+  "apiSetupTab": {
+    "message": "API-oppsett",
+    "description": "Tab title for API setup"
   },
-  "measurementsTitle": {
-    "message": "Målinger å vise",
-    "description": "Title for measurements section"
+  "displayOptionsTab": {
+    "message": "Visningsalternativer",
+    "description": "Tab title for display options"
   },
-  "measurementsDescription": {
-    "message": "Velg hvilke målinger som skal vises for hver modul (når tilgjengelig).",
-    "description": "Description for measurements selector"
+  "aboutTab": {
+    "message": "Om",
+    "description": "Tab title for about section"
   },
-  "co2ThresholdsTitle": {
-    "message": "CO² Terskelverdier",
-    "description": "Title for CO2 thresholds section"
+  "refreshButtonTitle": {
+    "message": "Oppdater data",
+    "description": "Title for refresh button"
   },
-  "averageThresholdLabel": {
-    "message": "Gjennomsnittlig terskel (ppm)",
-    "description": "Label for average CO2 threshold"
+  "settingsButtonTitle": {
+    "message": "Innstillinger",
+    "description": "Title for settings button"
   },
-  "badThresholdLabel": {
-    "message": "Dårlig terskel (ppm)",
-    "description": "Label for bad CO2 threshold"
+  "goToSettings": {
+    "message": "Åpne innstillinger",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Tilpass hvordan værinformasjon vises i utvidelsen.",
+    "description": "Description for display options tab"
   },
   "goodLabel": {
     "message": "God",
@@ -257,12 +261,40 @@
     "message": "Dårlig",
     "description": "Label for bad CO2 level"
   },
-  "testAuthText": {
-    "message": "Test autentisering",
-    "description": "Text for authentication test button"
+  "undefinedLabel": {
+    "message": "Udefinert",
+    "description": "Label for undefined status"
   },
-  "selectLanguageText": {
-    "message": "Velg ditt språk",
-    "description": "Text for language selection"
+  "humidityExplanation": {
+    "message": "Luftfuktighet",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "CO² verdi",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "Om StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Opphavsrett",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Basert på MagicMirror-modulen av Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Opprinnelig kodebase",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Personvern",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Denne utvidelsen kobler seg kun til værstasjonens API og samler ikke inn eller deler personlige data. Dine API-legitimasjoner lagres lokalt i nettleserens sikre lagring.",
+    "description": "Text for privacy section"
   }
 }

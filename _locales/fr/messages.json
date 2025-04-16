@@ -264,5 +264,69 @@
   "selectLanguageText": {
     "message": "Sélectionnez votre langue",
     "description": "Text for language selection"
+  },
+  "apiSetupTab": {
+    "message": "Configuration API",
+    "description": "Tab title for API setup"
+  },
+  "displayOptionsTab": {
+    "message": "Options d'affichage",
+    "description": "Tab title for display options"
+  },
+  "aboutTab": {
+    "message": "À propos",
+    "description": "Tab title for about section"
+  },
+  "refreshButtonTitle": {
+    "message": "Actualiser les données",
+    "description": "Title for refresh button"
+  },
+  "settingsButtonTitle": {
+    "message": "Paramètres",
+    "description": "Title for settings button"
+  },
+  "goToSettings": {
+    "message": "Ouvrir les paramètres",
+    "description": "Button to open settings page"
+  },
+  "displayOptionsDescription": {
+    "message": "Personnalisez l'affichage des informations météorologiques dans l'extension.",
+    "description": "Description for display options tab"
+  },
+  "undefinedLabel": {
+    "message": "Non défini",
+    "description": "Label for undefined status"
+  },
+  "humidityExplanation": {
+    "message": "Humidité",
+    "description": "Explanation for humidity value"
+  },
+  "co2ValueExplanation": {
+    "message": "Valeur CO²",
+    "description": "Explanation for CO2 value"
+  },
+  "aboutTitle": {
+    "message": "À propos de StationWeather",
+    "description": "Title for about section"
+  },
+  "attributionTitle": {
+    "message": "Attribution",
+    "description": "Title for attribution section"
+  },
+  "attributionText": {
+    "message": "Basé sur le module MagicMirror de Christopher Fenner.",
+    "description": "Text for attribution"
+  },
+  "originalRepository": {
+    "message": "Dépôt d'origine",
+    "description": "Link to original repository"
+  },
+  "privacyTitle": {
+    "message": "Confidentialité",
+    "description": "Title for privacy section"
+  },
+  "privacyText": {
+    "message": "Cette extension se connecte uniquement à l'API de la station météo et ne collecte ni ne partage aucune donnée personnelle. Vos identifiants API sont stockés localement dans le stockage sécurisé de votre navigateur.",
+    "description": "Text for privacy section"
   }
 }
