@@ -290,8 +290,7 @@ function processModule(module, stationName, settings) {
         break;
     }
   }
-  
-  // Add module specific measurements
+// Add module specific measurements
   if (module.type === MODULE_TYPES.MAIN) {
     if (settings.showSignal && module.wifi_status !== undefined) {
       result.measurements.wifi = {
@@ -579,10 +578,14 @@ function getUnitForMeasurement(measurement, settings) {
  */
 function getIconForMeasurement(measurement, value) {
   switch (measurement) {
+    case MEASUREMENT_TYPES.CO2:
+      return 'leaf';  // Ändrat till grönt löv för CO2
+    case MEASUREMENT_TYPES.HUMIDITY:
+      return 'tint';  // Ändrat till blå droppe för luftfuktighet
+    case MEASUREMENT_TYPES.TEMPERATURE:
+      return 'thermometer-half';  // Ändrat till termometer för temperatur
     case MEASUREMENT_TYPES.NOISE:
       return 'volume-up';
-    case MEASUREMENT_TYPES.HUMIDITY:
-      return 'water';
     case MEASUREMENT_TYPES.PRESSURE:
       return 'gauge';
     case MEASUREMENT_TYPES.WIND_STRENGTH:

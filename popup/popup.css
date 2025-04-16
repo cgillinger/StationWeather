@@ -112,7 +112,7 @@ button:hover {
 
 .netatmo-module {
   background-color: #333; /* Mörkare bakgrund för moduler */
-  border-radius: 8px;
+  border-radius: 8px; /* Alla hörn rundade */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   width: 100%; /* Fyll hela tillgängliga bredden */
@@ -214,6 +214,35 @@ button:hover {
   margin-right: 10px;
   color: #aaa;
   font-size: 16px; /* Större ikonstorlek */
+}
+
+/* Ikonfärger */
+.icon-humidity {
+  color: #3498db; /* Blå färg för luftfuktighet */
+}
+
+.icon-temperature {
+  color: #f1c40f; /* Gul färg för temperatur */
+}
+
+.icon-co2 {
+  color: #2ecc71; /* Grön färg för CO2 */
+}
+
+.icon-noise {
+  color: #9b59b6; /* Lila färg för ljud */
+}
+
+.icon-pressure {
+  color: #e67e22; /* Orange färg för tryck */
+}
+
+.icon-battery {
+  color: #27ae60; /* Grön färg för batteri */
+}
+
+.icon-wifi, .icon-signal {
+  color: #3498db; /* Blå färg för wifi/signal */
 }
 
 .measurement-label {

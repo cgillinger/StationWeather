@@ -211,7 +211,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (primaryValue) {
       const primaryEl = document.createElement('div');
       primaryEl.className = 'primary-value';
-      primaryEl.innerHTML = `${primaryValue.value}<span class="primary-unit">${primaryValue.unit}</span>`;
+      // Lägg till termometer-ikon före temperaturen
+      if (primaryValue.name === 'Temperature') {
+        primaryEl.innerHTML = `<i class="fas fa-thermometer-half icon-temperature"></i> ${primaryValue.value}<span class="primary-unit">${primaryValue.unit}</span>`;
+      } else {
+        primaryEl.innerHTML = `${primaryValue.value}<span class="primary-unit">${primaryValue.unit}</span>`;
+      }
       dataEl.appendChild(primaryEl);
     }
     
@@ -221,12 +226,17 @@ document.addEventListener('DOMContentLoaded', async () => {
       const secondaryEl = document.createElement('div');
       secondaryEl.className = 'secondary-value';
       
-      // For CO2, show colored indicator
+      // For CO2, show colored indicator and use leaf icon
       if (secondaryValue.name === 'CO2') {
         const co2Status = module.co2Status || 'undefined';
         const indicatorEl = document.createElement('div');
         indicatorEl.className = `co2-indicator co2-${co2Status}`;
         secondaryEl.appendChild(indicatorEl);
+        
+        const textEl = document.createElement('div');
+        textEl.className = 'secondary-text';
+        textEl.innerHTML = `<i class="fas fa-leaf icon-co2"></i> ${secondaryValue.value} ppm`;
+        secondaryEl.appendChild(textEl);
       } 
       // For wind direction, show arrow
       else if (secondaryValue.name === 'WindAngle') {
@@ -235,12 +245,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         arrowEl.innerHTML = '<i class="fas fa-arrow-up"></i>';
         arrowEl.style.transform = `rotate(${secondaryValue.value}deg)`;
         secondaryEl.appendChild(arrowEl);
+        
+        const textEl = document.createElement('div');
+        textEl.className = 'secondary-text';
+        textEl.textContent = `${secondaryValue.display}`;
+        secondaryEl.appendChild(textEl);
       }
-      
-      const textEl = document.createElement('div');
-      textEl.className = 'secondary-text';
-      textEl.textContent = `${secondaryValue.display}`;
-      secondaryEl.appendChild(textEl);
+      // For humidity, use water drop icon
+      else if (secondaryValue.name === 'Humidity') {
+        const textEl = document.createElement('div');
+        textEl.className = 'secondary-text';
+        textEl.innerHTML = `<i class="fas fa-tint icon-humidity"></i> ${secondaryValue.value}${secondaryValue.unit}`;
+        secondaryEl.appendChild(textEl);
+      }
+      // Default display for other secondary values
+      else {
+        const textEl = document.createElement('div');
+        textEl.className = 'secondary-text';
+        textEl.textContent = `${secondaryValue.display}`;
+        secondaryEl.appendChild(textEl);
+      }
       
       dataEl.appendChild(secondaryEl);
     }
@@ -255,10 +279,33 @@ document.addEventListener('DOMContentLoaded', async () => {
       const measurementEl = document.createElement('div');
       measurementEl.className = 'measurement';
       
-      // Icon
+      // Icon with appropriate color class
       if (measurement.icon) {
         const iconEl = document.createElement('span');
-        iconEl.className = `measurement-icon`;
+        let iconColorClass = '';
+        
+        // Set appropriate color class based on measurement type
+        switch(measurement.name) {
+          case 'Humidity':
+            iconColorClass = 'icon-humidity';
+            break;
+          case 'Temperature':
+            iconColorClass = 'icon-temperature';
+            break;
+          case 'CO2':
+            iconColorClass = 'icon-co2';
+            break;
+          case 'Noise':
+            iconColorClass = 'icon-noise';
+            break;
+          case 'Pressure':
+            iconColorClass = 'icon-pressure';
+            break;
+          default:
+            iconColorClass = '';
+        }
+        
+        iconEl.className = `measurement-icon ${iconColorClass}`;
         iconEl.innerHTML = `<i class="fas fa-${measurement.icon}"></i>`;
         measurementEl.appendChild(iconEl);
       }
@@ -290,10 +337,25 @@ document.addEventListener('DOMContentLoaded', async () => {
       const indicatorEl = document.createElement('div');
       indicatorEl.className = `system-indicator ${getBatteryClass(indicator)}`;
       
-      // Icon
+      // Icon with appropriate color class
       if (indicator.icon) {
+        let iconColorClass = '';
+        
+        // Set color class based on indicator type
+        switch(indicator.name) {
+          case 'battery':
+            iconColorClass = 'icon-battery';
+            break;
+          case 'wifi':
+          case 'radio':
+            iconColorClass = 'icon-wifi';
+            break;
+          default:
+            iconColorClass = '';
+        }
+        
         const iconEl = document.createElement('span');
-        iconEl.className = `measurement-icon`;
+        iconEl.className = `measurement-icon ${iconColorClass}`;
         iconEl.innerHTML = `<i class="fas fa-${indicator.icon}"></i>`;
         indicatorEl.appendChild(iconEl);
       }
