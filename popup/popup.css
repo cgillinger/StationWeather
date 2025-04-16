@@ -112,7 +112,7 @@ button:hover {
 
 .netatmo-module {
   background-color: #333; /* Mörkare bakgrund för moduler */
-  border-radius: 8px; /* Alla hörn rundade */
+  border-radius: 8px; /* Alla fyra hörn rundade */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   width: 100%; /* Fyll hela tillgängliga bredden */
@@ -124,6 +124,7 @@ button:hover {
   color: #fff;
   font-weight: 500;
   font-size: 14px;
+  border-radius: 8px 8px 0 0; /* Runda bara övre hörn */
 }
 
 .module-content {
