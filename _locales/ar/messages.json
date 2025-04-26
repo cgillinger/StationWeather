@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "يتصل هذا الامتداد فقط بـ API للمحطة الجوية ولا يجمع أو يشارك أي بيانات شخصية. يتم تخزين بيانات اعتماد API الخاصة بك محليًا في التخزين الآمن لمتصفحك.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "إعدادات الوحدات",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "وحدة درجة الحرارة",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "سيلسيوس (°م)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "فهرنهايت (°ف)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "وحدة الضغط",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "مللي بار",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "هيكتوباسكال",
+    "description": "Label for hPa option"
   }
 }

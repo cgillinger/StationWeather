@@ -328,5 +328,33 @@
   "privacyText": {
     "message": "Diese Erweiterung verbindet sich nur mit der Wetterstations-API und sammelt oder teilt keine persönlichen Daten. Ihre API-Anmeldedaten werden lokal im sicheren Speicher Ihres Browsers gespeichert.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Einheiteneinstellungen",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Temperatureinheit",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsius (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Druckeinheit",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

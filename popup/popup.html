@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netatmo Weather</title>
+  <title>StationWeather</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../styles/common.css">
   <link rel="stylesheet" href="popup.css">
@@ -11,12 +11,12 @@
 <body>
   <div class="container">
     <header>
-      <h1><img src="../images/netatmo-logo.png" alt="Netatmo" class="logo"> <span id="header-title" data-i18n="extName">Netatmo Väder</span></h1>
+      <h1><img src="../images/station-logo.png" alt="StationWeather" class="logo"> <span id="header-title" data-i18n="extName">StationWeather</span></h1>
       <div class="actions">
-        <button id="refresh-btn" title="Uppdatera data">
+        <button id="refresh-btn" title="Refresh data">
           <i class="fas fa-sync-alt"></i>
         </button>
-        <button id="settings-btn" title="Inställningar">
+        <button id="settings-btn" title="Settings">
           <i class="fas fa-cog"></i>
         </button>
       </div>
@@ -24,20 +24,20 @@
     
     <div id="loading" class="state-message">
       <i class="fas fa-circle-notch fa-spin"></i>
-      <span id="loading-text" data-i18n="loadingData">Laddar data från Netatmo...</span>
+      <span id="loading-text" data-i18n="loadingData">Loading data from station...</span>
     </div>
     
     <div id="error" class="state-message hidden">
       <i class="fas fa-exclamation-circle"></i>
-      <span id="error-text" data-i18n="authError">Fel vid inläsning av data</span>
+      <span id="error-text" data-i18n="authError">Error loading data</span>
     </div>
     
     <div id="no-auth" class="state-message hidden">
       <i class="fas fa-key"></i>
       <div>
-        <p id="auth-needed-text" data-i18n="authError">Autentisering krävs</p>
-        <p id="auth-instructions-text" data-i18n="apiInstructions">Konfigurera dina Netatmo API-uppgifter i inställningarna</p>
-        <button id="go-to-settings" class="primary-button" data-i18n="saveButton">Öppna inställningar</button>
+        <p id="auth-needed-text" data-i18n="authError">Authentication required</p>
+        <p id="auth-instructions-text" data-i18n="apiInstructions">Configure your API credentials in settings</p>
+        <button id="go-to-settings" class="primary-button" data-i18n="saveButton">Open Settings</button>
       </div>
     </div>
     

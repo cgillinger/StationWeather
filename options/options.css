@@ -106,6 +106,30 @@ header h1 {
   margin-bottom: 24px;
 }
 
+/* Radio button styling */
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.form-check-inline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.form-check-inline input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.form-check input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+}
+
 .form-actions {
   display: flex;
   justify-content: flex-end;
@@ -260,5 +284,10 @@ header h1 {
   
   .threshold-inputs {
     grid-template-columns: 1fr;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 8px;
   }
 }

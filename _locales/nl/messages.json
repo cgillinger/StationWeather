@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "Deze extensie maakt alleen verbinding met de weerstation-API en verzamelt of deelt geen persoonlijke gegevens. Je API-gegevens worden lokaal opgeslagen in de beveiligde opslag van je browser.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Eenheidinstellingen",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Temperatuureenheid",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsius (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Drukeenheid",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

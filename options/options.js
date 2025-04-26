@@ -89,6 +89,15 @@ function localizeUI() {
   document.getElementById('show-trend-label').textContent = getMessage('showTrendLabel');
   document.getElementById('show-station-name-label').textContent = getMessage('showStationNameLabel');
   
+  // Unit Settings section
+  document.getElementById('unit-settings-title').textContent = getMessage('unitSettingsTitle') || 'Unit Settings';
+  document.getElementById('temperature-unit-label').textContent = getMessage('temperatureUnitLabel') || 'Temperature Unit';
+  document.getElementById('celsius-label').textContent = getMessage('celsiusLabel') || 'Celsius (°C)';
+  document.getElementById('fahrenheit-label').textContent = getMessage('fahrenheitLabel') || 'Fahrenheit (°F)';
+  document.getElementById('pressure-unit-label').textContent = getMessage('pressureUnitLabel') || 'Pressure Unit';
+  document.getElementById('mbar-label').textContent = getMessage('mbarLabel') || 'mbar';
+  document.getElementById('hpa-label').textContent = getMessage('hpaLabel') || 'hPa';
+  
   // Language settings
   document.getElementById('language-settings-title').textContent = getMessage('languageSettingsTitle');
   document.getElementById('language-label').textContent = getMessage('languageLabel');
@@ -150,6 +159,19 @@ async function loadSettings() {
   document.getElementById('show-signal').checked = settings.showSignal !== false;
   document.getElementById('show-trend').checked = settings.showTrend !== false;
   document.getElementById('show-station-name').checked = settings.showStationName !== false;
+  
+  // Temperatur- och tryckinställningar
+  if (settings.temperatureUnit === 'fahrenheit') {
+    document.getElementById('temperature-unit-fahrenheit').checked = true;
+  } else {
+    document.getElementById('temperature-unit-celsius').checked = true;
+  }
+  
+  if (settings.pressureUnit === 'hpa') {
+    document.getElementById('pressure-unit-hpa').checked = true;
+  } else {
+    document.getElementById('pressure-unit-mbar').checked = true;
+  }
   
   // CO2 thresholds
   document.getElementById('co2-average').value = settings.thresholdCO2Average || 800;
@@ -298,6 +320,10 @@ async function saveDisplaySettings() {
   const newLanguage = document.getElementById('language-selector').value;
   const languageChanged = newLanguage !== settings.language;
   
+  // Hämta temperatur- och tryckenhetsinställningar
+  const temperatureUnit = document.querySelector('input[name="temperature-unit"]:checked').value;
+  const pressureUnit = document.querySelector('input[name="pressure-unit"]:checked').value;
+  
   // Update display settings
   const updatedSettings = {
     ...settings,
@@ -307,7 +333,10 @@ async function saveDisplaySettings() {
     showStationName: document.getElementById('show-station-name').checked,
     thresholdCO2Average: parseInt(document.getElementById('co2-average').value) || 800,
     thresholdCO2Bad: parseInt(document.getElementById('co2-bad').value) || 1800,
-    language: newLanguage
+    language: newLanguage,
+    // Lägg till de nya enhetsinställningarna
+    temperatureUnit: temperatureUnit,
+    pressureUnit: pressureUnit
   };
   
   // Update measurement display options

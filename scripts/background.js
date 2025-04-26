@@ -1,5 +1,5 @@
 /**
- * StationWeather Edge Extension
+ * StationWeather Browser Extension
  * Background Script - Handles API communication and data updates
  * 
  * Based on the MagicMirror module by Christopher Fenner
@@ -57,9 +57,19 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === 'getNetatmoData') {
     // Return cached data immediately
-    chrome.storage.local.get('weatherData', (data) => {
-      sendResponse({ data: data.weatherData || null });
+    chrome.storage.local.get(['weatherData', 'rawWeatherData'], async (data) => {
+      // Get current settings
+      const { settings } = await chrome.storage.sync.get('settings');
+      
+      // If we have raw data, process it with current settings to ensure correct units
+      if (data.rawWeatherData) {
+        const processedData = processMeasurements(data.rawWeatherData, settings || getDefaultSettings());
+        sendResponse({ data: processedData || null });
+      } else {
+        sendResponse({ data: data.weatherData || null });
+      }
     });
+    
     // Then update if necessary
     updateWeatherDataIfNeeded();
     return true; // Keep channel open for async response
@@ -195,16 +205,22 @@ async function updateWeatherData() {
     // Fetch data from API
     const rawData = await fetchWeatherData(accessToken);
     
-    // Process and store the data
-    const processedData = processMeasurements(rawData, settings);
+    // Store the raw data for future use
     await chrome.storage.local.set({
-      weatherData: processedData,
+      rawWeatherData: rawData,
       lastUpdate: Date.now(),
       weatherError: null
     });
     
+    // Process data for display
+    const processedData = processMeasurements(rawData, settings);
+    
+    await chrome.storage.local.set({
+      weatherData: processedData
+    });
+    
     // Update extension badge
-    updateBadge(processedData);
+    updateBadge(rawData, settings);
     
     console.log('Weather data updated successfully');
     return processedData;
@@ -260,21 +276,47 @@ async function refreshTokenIfNeeded(settings) {
 /**
  * Update the extension badge with current information
  */
-function updateBadge(data) {
-  if (!data || !data.modules || data.modules.length === 0) {
+function updateBadge(data, settings) {
+  if (!data || !data.devices || data.devices.length === 0) {
     chrome.action.setBadgeText({ text: '' });
     return;
   }
   
-  // Find main outdoor module for badge
-  const outdoorModule = data.modules.find(m => 
-    m.type === 'NAModule1' && m.reachable === true
-  );
+  // Hitta utomhusmodulen
+  let outdoorTemp = null;
   
-  if (outdoorModule && outdoorModule.measurements.Temperature) {
-    // Show temperature on badge
-    const temp = Math.round(outdoorModule.measurements.Temperature.value);
-    chrome.action.setBadgeText({ text: `${temp}°` });
+  // Leta igenom alla enheter och moduler
+  for (const device of data.devices) {
+    // Sök efter outdoor-moduler först (NAModule1)
+    if (device.modules && Array.isArray(device.modules)) {
+      const outdoorModule = device.modules.find(m => 
+        m.type === 'NAModule1' && m.reachable === true && 
+        m.dashboard_data && m.dashboard_data.Temperature !== undefined
+      );
+      
+      if (outdoorModule && outdoorModule.dashboard_data) {
+        outdoorTemp = outdoorModule.dashboard_data.Temperature;
+        break;
+      }
+    }
+    
+    // Om ingen utomhusmodul, använd huvudstationen om den har temp
+    if (outdoorTemp === null && device.dashboard_data && 
+        device.dashboard_data.Temperature !== undefined) {
+      outdoorTemp = device.dashboard_data.Temperature;
+    }
+  }
+  
+  if (outdoorTemp !== null) {
+    // Temperaturen är i Celsius från API:et
+    // Konvertera till Fahrenheit om det är användarens val
+    let displayTemp = Math.round(outdoorTemp);
+    
+    if (settings.temperatureUnit === 'fahrenheit') {
+      displayTemp = Math.round(outdoorTemp * 1.8 + 32);
+    }
+    
+    chrome.action.setBadgeText({ text: `${displayTemp}°` });
     chrome.action.setBadgeBackgroundColor({ color: '#1E88E5' });
   } else {
     chrome.action.setBadgeText({ text: '' });
@@ -292,6 +334,21 @@ async function saveSettings(newSettings) {
   if (newSettings.language && newSettings.language !== currentLanguage) {
     currentLanguage = newSettings.language;
     await initTranslations(currentLanguage);
+  }
+  
+  // När inställningarna sparas, bearbeta om rådata med de nya inställningarna
+  const { rawWeatherData } = await chrome.storage.local.get('rawWeatherData');
+  if (rawWeatherData) {
+    // Bearbeta rådata med nya inställningar
+    const processedData = processMeasurements(rawWeatherData, newSettings);
+    
+    // Spara bearbetad data
+    await chrome.storage.local.set({
+      weatherData: processedData
+    });
+    
+    // Uppdatera badge med rådatan och nya inställningar
+    updateBadge(rawWeatherData, newSettings);
   }
 }
 

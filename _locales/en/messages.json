@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "This extension only connects to the weather station API and does not collect or share any personal data. Your API credentials are stored locally in your browser's secure storage.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Unit Settings",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Temperature Unit",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsius (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Pressure Unit",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

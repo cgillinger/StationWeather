@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "यह एक्सटेंशन केवल मौसम स्टेशन API से कनेक्ट करता है और किसी भी व्यक्तिगत डेटा को एकत्र या साझा नहीं करता है। आपके API क्रेडेंशियल आपके ब्राउज़र के सुरक्षित स्टोरेज में स्थानीय रूप से संग्रहीत किए जाते हैं।",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "इकाई सेटिंग्स",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "तापमान इकाई",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "सेल्सियस (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "फ़ारेनहाइट (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "दबाव इकाई",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "मिलीबार",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "हेक्टोपास्कल",
+    "description": "Label for hPa option"
   }
 }

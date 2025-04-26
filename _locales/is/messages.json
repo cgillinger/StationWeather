@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "Þessi viðbót tengist aðeins við API veðurstöðvarinnar og safnar ekki eða deilir persónulegum gögnum. API lyklar þínir eru vistaðir staðbundið í öruggri geymslu vafrans þíns.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Einingastillingar",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Hitastigseining",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsius (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Þrýstingseining",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

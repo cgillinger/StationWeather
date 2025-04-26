@@ -1,5 +1,5 @@
 /**
- * Netatmo Weather Edge Extension
+ * StationWeather Browser Extension
  * Popup Script - Handles the popup UI
  * 
  * Based on the MagicMirror module by Christopher Fenner
@@ -43,6 +43,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load data and setup event listeners
     await loadData();
     setupEventListeners();
+    
+    // Lyssna på ändringar i inställningar för att uppdatera UI automatiskt
+    chrome.storage.onChanged.addListener((changes, areaName) => {
+      if (areaName === 'sync' && changes.settings) {
+        // Inställningarna har ändrats, ladda om data
+        loadData();
+      }
+      
+      // Även lyssna på ändringar i lokala data
+      if (areaName === 'local' && changes.weatherData) {
+        // Väderdata har uppdaterats, uppdatera UI
+        if (changes.weatherData.newValue) {
+          renderData(changes.weatherData.newValue);
+        }
+      }
+    });
   }
   
   /**
@@ -98,9 +114,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       
       if (!response || !response.data) {
         // Check if we have a stored error
-        chrome.storage.local.get(['netatmoError', 'lastErrorTime'], (errorData) => {
-          if (errorData.netatmoError) {
-            showErrorState(errorData.netatmoError);
+        chrome.storage.local.get(['weatherError', 'lastErrorTime'], (errorData) => {
+          if (errorData.weatherError) {
+            showErrorState(errorData.weatherError);
           } else {
             showLoadingState(); // Keep showing loading until we get data
           }
@@ -136,7 +152,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   /**
    * Render data in the UI
    * 
-   * @param {Object} data - Processed Netatmo data
+   * @param {Object} data - Processed weather station data
    */
   function renderData(data) {
     if (!data || !data.modules || data.modules.length === 0) {
@@ -155,24 +171,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Clear existing modules
     modulesContainerEl.innerHTML = '';
     
-    // Sortera modulerna så att utomhusmodulen kommer först
+    // Sort the modules so outdoor module comes first
     const sortedModules = [...data.modules].sort((a, b) => {
-      // Placera utomhusmoduler först
+      // Place outdoor modules first
       if (a.type === 'NAModule1' && b.type !== 'NAModule1') return -1;
       if (a.type !== 'NAModule1' && b.type === 'NAModule1') return 1;
       
-      // Sedan inomhusmoduler
+      // Then indoor modules
       if (a.type === 'NAMain' && b.type !== 'NAMain') return -1;
       if (a.type !== 'NAMain' && b.type === 'NAMain') return 1;
       
-      // Behåll övrig ordning
+      // Keep other order
       return 0;
     });
     
     // Render each module
     sortedModules.forEach(module => {
       if (module.reachable) {
-        renderNetatmoModule(module);
+        renderStationModule(module);
       } else {
         renderOfflineModule(module);
       }
@@ -184,11 +200,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
   
   /**
-   * Render a Netatmo module
+   * Render a weather station module
    * 
    * @param {Object} module - Module data
    */
-  function renderNetatmoModule(module) {
+  function renderStationModule(module) {
     const moduleEl = document.createElement('div');
     moduleEl.className = 'netatmo-module';
     
@@ -211,7 +227,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (primaryValue) {
       const primaryEl = document.createElement('div');
       primaryEl.className = 'primary-value';
-      // Lägg till termometer-ikon före temperaturen
+      // Add thermometer icon before temperature
       if (primaryValue.name === 'Temperature') {
         primaryEl.innerHTML = `<i class="fas fa-thermometer-half icon-temperature"></i> ${primaryValue.value}<span class="primary-unit">${primaryValue.unit}</span>`;
       } else {

@@ -1,11 +1,11 @@
-# Netatmo Weather Edge Extension
+# StationWeather Browser Extension
 
-A Microsoft Edge extension to display information from your Netatmo weather station directly in your browser.
+A browser extension to display information from your weather station directly in your browser.
 
 ## Features
 
-- View real-time weather data from your Netatmo weather station
-- Supports all Netatmo module types: main station, indoor, outdoor, rain, and wind modules
+- View real-time weather data from your weather station 
+- Supports all module types: main station, indoor, outdoor, rain, and wind modules
 - Displays temperature, humidity, CO2 levels, pressure, wind, and rain data
 - Quick glance at current conditions via the extension popup
 - Customize which measurements are displayed
@@ -39,25 +39,25 @@ The extension is fully localized and available in the following languages:
 
 ## Installation
 
-You can install this extension from the Microsoft Edge Add-ons store:
+You can install this extension from the browser's extension store:
 
-1. Visit the [Edge Add-ons Store](https://microsoftedge.microsoft.com/addons)
-2. Search for "Netatmo Weather"
-3. Click "Add to Edge"
+1. Visit the [Microsoft Edge Add-ons Store](https://microsoftedge.microsoft.com/addons) or [Chrome Web Store](https://chrome.google.com/webstore)
+2. Search for "StationWeather"
+3. Click "Add to Browser"
 
 ## Setup
 
-After installation, you need to connect the extension to your Netatmo account:
+After installation, you need to connect the extension to your weather station account:
 
-1. Create an application in the [Netatmo Developer Portal](https://dev.netatmo.com/apps)
+1. Create an application in the [Developer Portal](https://dev.netatmo.com/apps)
 2. Generate a token with the `read_station` scope
 3. Copy your Client ID, Client Secret, and the refresh token to the extension settings
 
 ### Detailed Setup Instructions
 
-1. **Create a Netatmo application**:
-   - Go to the [Netatmo Developer Portal](https://dev.netatmo.com/apps)
-   - Sign in with your Netatmo account
+1. **Create a weather station application**:
+   - Go to the [Developer Portal](https://dev.netatmo.com/apps)
+   - Sign in with your account
    - Click "Create" to create a new application
    - Fill in the required information (name, description, etc.)
    - For the redirect URI, you can use `https://example.com` (it's not used by the extension)
@@ -83,7 +83,7 @@ After installation, you need to connect the extension to your Netatmo account:
 
 ## Privacy
 
-This extension only communicates with the Netatmo API. Your API credentials are stored locally in your browser's secure storage and are never sent to any third-party servers.
+This extension only communicates with the weather station API. Your API credentials are stored locally in your browser's secure storage and are never sent to any third-party servers.
 
 ## Attribution
 

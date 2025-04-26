@@ -108,6 +108,39 @@
                 <label for="show-station-name" id="show-station-name-label" data-i18n="showStationNameLabel">Show station name</label>
               </div>
               
+              <!-- Ny Unit Settings sektion -->
+              <div class="form-group mt-3">
+                <h3 id="unit-settings-title" data-i18n="unitSettingsTitle">Unit Settings</h3>
+                
+                <div class="form-group mt-2">
+                  <label id="temperature-unit-label" data-i18n="temperatureUnitLabel">Temperature Unit</label>
+                  <div class="radio-group">
+                    <div class="form-check form-check-inline">
+                      <input type="radio" id="temperature-unit-celsius" name="temperature-unit" value="celsius" checked>
+                      <label for="temperature-unit-celsius" id="celsius-label" data-i18n="celsiusLabel">Celsius (°C)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" id="temperature-unit-fahrenheit" name="temperature-unit" value="fahrenheit">
+                      <label for="temperature-unit-fahrenheit" id="fahrenheit-label" data-i18n="fahrenheitLabel">Fahrenheit (°F)</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group mt-2">
+                  <label id="pressure-unit-label" data-i18n="pressureUnitLabel">Pressure Unit</label>
+                  <div class="radio-group">
+                    <div class="form-check form-check-inline">
+                      <input type="radio" id="pressure-unit-mbar" name="pressure-unit" value="mbar" checked>
+                      <label for="pressure-unit-mbar" id="mbar-label" data-i18n="mbarLabel">mbar</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" id="pressure-unit-hpa" name="pressure-unit" value="hpa">
+                      <label for="pressure-unit-hpa" id="hpa-label" data-i18n="hpaLabel">hPa</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <div class="form-group">
                 <h3 id="language-settings-title" data-i18n="languageSettingsTitle">Language Settings</h3>
                 
@@ -250,7 +283,7 @@
               This extension displays weather information from your home weather station.
             </p>
             
-            <p id="version-info">Version: 1.0.0</p>
+            <p id="version-info">Version: <span id="extension-version">1.0</span></p>
             
             <h3 id="attribution-title">Attribution</h3>
             <p id="attribution-text">
@@ -260,6 +293,9 @@
               <a href="https://github.com/CFenner/MMM-Netatmo" target="_blank" id="original-repo-link" class="nav-link">
                 <i class="fab fa-github"></i> Original Repository
               </a>
+            </p>
+            <p id="weather-icons-attribution">
+              Weather icons based on <a href="https://www.amcharts.com/free-animated-svg-weather-icons/" target="_blank">SVG Weather Icons</a> by amCharts, licensed under CC BY 4.0.
             </p>
             
             <h3 id="privacy-title">Privacy</h3>

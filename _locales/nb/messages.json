@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "Denne utvidelsen kobler seg kun til værstasjonens API og samler ikke inn eller deler personlige data. Dine API-legitimasjoner lagres lokalt i nettleserens sikre lagring.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Enhetsinnstillinger",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Temperaturenhet",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsius (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Trykkenhet",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

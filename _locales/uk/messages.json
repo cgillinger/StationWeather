@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "Це розширення підключається лише до API метеостанції та не збирає і не поширює особисті дані. Ваші облікові дані API зберігаються локально в безпечному сховищі вашого браузера.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Налаштування одиниць вимірювання",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Одиниця температури",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Цельсій (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Фаренгейт (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Одиниця тиску",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "мбар",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "гПа",
+    "description": "Label for hPa option"
   }
 }

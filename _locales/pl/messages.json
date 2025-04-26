@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "To rozszerzenie łączy się tylko z API stacji pogodowej i nie zbiera ani nie udostępnia żadnych danych osobowych. Twoje dane uwierzytelniające API są przechowywane lokalnie w bezpiecznym magazynie Twojej przeglądarki.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Ustawienia jednostek",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Jednostka temperatury",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsjusz (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Jednostka ciśnienia",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

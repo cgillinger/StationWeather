@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "Tämä laajennus muodostaa yhteyden vain sääaseman API:in eikä kerää tai jaa henkilökohtaisia tietoja. API-tunnuksesi tallennetaan paikallisesti selaimesi suojattuun tallennustilaan.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Yksikköasetukset",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Lämpötilayksikkö",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsius (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Paineyksikkö",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

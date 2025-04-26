@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "この拡張機能は気象ステーションのAPIにのみ接続し、個人データを収集または共有しません。APIの認証情報はブラウザの安全なストレージに保存されます。",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "単位設定",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "温度単位",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "摂氏 (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "華氏 (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "気圧単位",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

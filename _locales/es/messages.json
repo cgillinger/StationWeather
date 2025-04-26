@@ -328,5 +328,33 @@
   "privacyText": {
     "message": "Esta extensión solo se conecta a la API de la estación meteorológica y no recopila ni comparte datos personales. Tus credenciales de API se almacenan localmente en el almacenamiento seguro de tu navegador.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Configuración de Unidades",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Unidad de Temperatura",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsius (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Unidad de Presión",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }

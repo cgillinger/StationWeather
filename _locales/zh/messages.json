@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "此扩展仅连接到气象站 API，不收集或共享任何个人数据。您的 API 凭据存储在浏览器的安全存储中。",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "单位设置",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "温度单位",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "摄氏度 (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "华氏度 (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "气压单位",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "毫巴 (mbar)",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "百帕 (hPa)",
+    "description": "Label for hPa option"
   }
 }

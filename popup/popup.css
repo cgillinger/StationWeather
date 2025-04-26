@@ -110,25 +110,36 @@ button:hover {
   width: 100%; /* Fyll hela tillgängliga bredden */
 }
 
+/* REVISED MODULE STYLING WITH !IMPORTANT */
 .netatmo-module {
-  background-color: #333; /* Mörkare bakgrund för moduler */
-  border-radius: 8px; /* Alla fyra hörn rundade */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  width: 100%; /* Fyll hela tillgängliga bredden */
+  position: relative !important;
+  background-color: transparent !important;
+  border-radius: 8px !important;
+  overflow: visible !important;
+  width: 100% !important;
+  margin-bottom: 16px !important;
+  box-shadow: none !important;
 }
 
 .module-header {
-  padding: 8px 12px;
-  background-color: #1a1a1a; /* Mörkare än original */
-  color: #fff;
-  font-weight: 500;
-  font-size: 14px;
-  border-radius: 8px 8px 0 0; /* Runda bara övre hörn */
+  padding: 8px 12px !important;
+  background-color: #1a1a1a !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  border-radius: 8px 8px 0 0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 .module-content {
-  padding: 16px;
+  padding: 16px !important;
+  background-color: #333 !important;
+  border-radius: 0 0 8px 8px !important;
+  position: relative !important;
+  z-index: 1 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
 .module-data {

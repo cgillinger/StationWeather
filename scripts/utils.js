@@ -64,7 +64,10 @@ export function getDefaultSettings() {
       'WindStrength',
       'WindAngle'
     ],
-    unitSystem: 'metric'
+    unitSystem: 'metric',
+    // Nya inställningar för temperatur- och tryckenheter
+    temperatureUnit: 'celsius', // 'celsius' eller 'fahrenheit'
+    pressureUnit: 'mbar'        // 'mbar' eller 'hpa'
   };
 }
 
@@ -367,11 +370,18 @@ function hasMeasurement(data, measurement) {
 function addMeasurement(result, measurement, data, settings) {
   const value = data[measurement];
   
+  // För temperatur, konvertera värdet till Fahrenheit om det är inställt
+  let adjustedValue = value;
+  if (measurement === MEASUREMENT_TYPES.TEMPERATURE && settings.temperatureUnit === 'fahrenheit') {
+    adjustedValue = value * 1.8 + 32;
+  }
+  
   const measurementInfo = {
     name: measurement,
-    value: value,
+    value: adjustedValue, // Använd det justerade värdet
+    originalValue: value, // Spara originalvärdet också
     unit: getUnitForMeasurement(measurement, settings),
-    display: formatValue(measurement, value, settings),
+    display: formatValue(measurement, adjustedValue, settings), // Använd det justerade värdet för visning
     icon: getIconForMeasurement(measurement, value)
   };
   
@@ -436,17 +446,13 @@ function formatValue(measurement, value, settings) {
 /**
  * Format temperature based on user settings
  * 
- * @param {number} value - Raw temperature value
+ * @param {number} value - Raw temperature value (already converted if necessary)
  * @param {Object} settings - User settings
  * @returns {string} Formatted temperature
  */
 function formatTemperature(value, settings) {
-  const unitSystem = settings.unitSystem || 'metric';
-  
-  if (unitSystem === 'imperial') {
-    return (value * 1.8 + 32).toFixed(1);
-  }
-  
+  // Värdet har redan konverterats till fahrenheit om det behövs
+  // så vi behöver bara formatera det här
   return value.toFixed(1);
 }
 
@@ -458,16 +464,15 @@ function formatTemperature(value, settings) {
  * @returns {string} Formatted pressure (without unit)
  */
 function formatPressure(value, settings) {
-  let unit = settings.pressureUnit || 'mbar';
-  if (settings.user && settings.user.pressureUnit) {
-    unit = settings.user.pressureUnit;
-  }
+  // Använd den specifika tryckinställningen
+  const pressureUnit = settings.pressureUnit || 'mbar';
   
-  switch (unit) {
+  switch (pressureUnit) {
     case 'mmHg':
       return (value / 1.333).toFixed(1);
     case 'inHg':
       return (value / 33.864).toFixed(2);
+    case 'hpa':
     case 'mbar':
     default:
       return value.toFixed(0);
@@ -541,8 +546,6 @@ function formatTrend(value) {
  * @returns {string} Unit
  */
 function getUnitForMeasurement(measurement, settings) {
-  const unitSystem = settings.unitSystem || 'metric';
-  
   switch (measurement) {
     case MEASUREMENT_TYPES.CO2:
       return 'ppm';
@@ -551,13 +554,15 @@ function getUnitForMeasurement(measurement, settings) {
     case MEASUREMENT_TYPES.HUMIDITY:
       return '%';
     case MEASUREMENT_TYPES.PRESSURE:
+      // Använd tryckinställningen
       return settings.pressureUnit || 'mbar';
     case MEASUREMENT_TYPES.TEMPERATURE:
-      return unitSystem === 'imperial' ? '°F' : '°C';
+      // Använd temperaturinställningen
+      return settings.temperatureUnit === 'fahrenheit' ? '°F' : '°C';
     case MEASUREMENT_TYPES.RAIN:
     case MEASUREMENT_TYPES.RAIN_PER_HOUR:
     case MEASUREMENT_TYPES.RAIN_PER_DAY:
-      return unitSystem === 'imperial' ? 'in/h' : 'mm/h';
+      return settings.unitSystem === 'imperial' ? 'in/h' : 'mm/h';
     case MEASUREMENT_TYPES.WIND_STRENGTH:
     case MEASUREMENT_TYPES.GUST_STRENGTH:
       return settings.windUnit || 'kph';

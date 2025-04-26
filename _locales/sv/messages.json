@@ -296,5 +296,33 @@
   "privacyText": {
     "message": "Detta tillägg ansluter endast till väderstationens API och samlar inte in eller delar personlig data. Dina API-uppgifter lagras lokalt i din webbläsares säkra lagring.",
     "description": "Text for privacy section"
+  },
+  "unitSettingsTitle": {
+    "message": "Enhetsinställningar",
+    "description": "Title for unit settings section"
+  },
+  "temperatureUnitLabel": {
+    "message": "Temperaturenhet",
+    "description": "Label for temperature unit selection"
+  },
+  "celsiusLabel": {
+    "message": "Celsius (°C)",
+    "description": "Label for Celsius option"
+  },
+  "fahrenheitLabel": {
+    "message": "Fahrenheit (°F)",
+    "description": "Label for Fahrenheit option"
+  },
+  "pressureUnitLabel": {
+    "message": "Tryckenhet",
+    "description": "Label for pressure unit selection"
+  },
+  "mbarLabel": {
+    "message": "mbar",
+    "description": "Label for mbar option"
+  },
+  "hpaLabel": {
+    "message": "hPa",
+    "description": "Label for hPa option"
   }
 }
